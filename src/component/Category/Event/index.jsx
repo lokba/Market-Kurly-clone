@@ -7,7 +7,7 @@ const Event = () => {
             <header>
                 <div id="userMenu">
                     <a>
-                        <img src="images/icons/delivery.png" />
+                        <img src="/images/icons/delivery.png" />
                     </a>
                     <div id="menu_lists">
                         <div id="register">
@@ -22,7 +22,7 @@ const Event = () => {
                         </div>
                         <div id="info">
                             <li>고객센터</li>
-                            <img src="images/icons/ico_down.png" />
+                            <img src="/images/icons/ico_down.png" />
                             <ul className="subinfo">
                                 <li>공지사항</li>
                                 <li>자주하는 질문</li>
@@ -35,21 +35,21 @@ const Event = () => {
                 </div>
                 <div className="logoArea">
                     <a href="index.html" id="logo">
-                        <img src="images/icons/logo_x2.png" />
+                        <img src="/images/icons/logo_x2.png" />
                     </a>
                 </div>
             </header>
             <nav>
                 <div id="category">
                     <div className="category_info">
-                        <img id="categoryAll_img" src="images/icons/ico_all.png" />
+                        <img id="categoryAll_img" src="/images/icons/ico_all.png" />
                         <li className="category_tit">전체 카테고리</li>
                     </div>
                     <div className="gnb_menu">
                         <ul>
                             <li className="gnb_menu_list">
                                 <div className="inner_menu">
-                                    <img className="i_menu_img" src="images/icons/icon_veggies_inactive_pc@2x.1586324570.png" />
+                                    <img className="i_menu_img" src="/images/icons/icon_veggies_inactive_pc@2x.1586324570.png" />
                                     <div className="i_menu_txt">채소</div>
                                 </div>
                                 <ul className="sub_menu">
@@ -343,10 +343,10 @@ const Event = () => {
                 </a>
                 <div id="search">
                     <input />
-                    <img src="images/icons/ico_search.png" />
+                    <img src="/images/icons/ico_search.png" />
                 </div>
                 <div id="location">
-                    <img id="location_img" src="images/icons/ico_location.svg" />
+                    <img id="location_img" src="/images/icons/ico_location.svg" />
                     <div className="location_subinfo">
                         <div><span>배송지를 등록</span>하고</div>
                         <div>구매 가능한 상품을 확인하세요!</div>
@@ -355,14 +355,14 @@ const Event = () => {
                                 <div className="location_loginBtn locationBtn">로그인</div>
                             </a>
                             <div className="location_addressBtn locationBtn">
-                                <img src="images/icons/ico_search_white.png" />
+                                <img src="/images/icons/ico_search_white.png" />
                                 <div>주소검색</div>
                             </div>
                         </div>
                     </div>
                 </div>
                 <a href="cart.html" id="cart">
-                    <img id="cart_img" src="images/icons/ico_cart.svg" />
+                    <img id="cart_img" src="/images/icons/ico_cart.svg" />
                 </a>
             </nav>
             <section className="bnr_lists">
@@ -374,12 +374,12 @@ const Event = () => {
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner2.png" />
+                            <img src="/images/banner/special_banner2.png" />
                         </a>
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner3.png" />
+                            <img src="/images/banner/special_banner3.png" />
                         </a>
                     </li>
                     <li className="list">

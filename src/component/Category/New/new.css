@@ -576,7 +576,7 @@ nav{
 .cart{
     width:45px;
     height:45px;
-    background-image: url("../../../images/goods/special/ico_cart.svg");
+    background-image: url("../../../img/ico_cart.svg");
     cursor:pointer;
 }
 

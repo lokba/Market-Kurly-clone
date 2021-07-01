@@ -3,8 +3,6 @@ import './new.css';
 
 const New = () => {
     return (
-
-
         <div id="wrap">
             <header>
                 <div id="userMenu">
