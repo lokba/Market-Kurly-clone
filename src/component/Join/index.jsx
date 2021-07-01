@@ -1,7 +1,7 @@
 import React from 'react';
 import './register.css'
 
-const Register = () => {
+const Join = () => {
     return (
 
 
@@ -649,4 +649,4 @@ const Register = () => {
 }
 
 
-export default Register;
+export default Join;

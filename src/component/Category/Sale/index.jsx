@@ -1,6 +1,6 @@
 import React from 'react';
 
-const cheap = () => {
+const Sale = () => {
     return (
 
         <div id="wrap">
@@ -650,4 +650,4 @@ const cheap = () => {
 }
 
 
-export default cheap;
+export default Sale;

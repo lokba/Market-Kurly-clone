@@ -1,8 +1,7 @@
 import React from 'react';
-import './id_search.css';
+import './special.css';
 
-const Id_search = () => {
-
+const Event = () => {
     return (
         <div id="wrap">
             <header>
@@ -366,46 +365,311 @@ const Id_search = () => {
                     <img id="cart_img" src="images/icons/ico_cart.svg" />
                 </a>
             </nav>
-            <div className="side_menu">
-                <div className="side_menu_img">
-                    <img src="images/icons/side_btn.png" />
-                </div>
-                <div className="side_menu_box">등급별 혜택</div>
-                <div className="side_menu_box">레시피</div>
-                <div className="side_menu_box">베스트 후기</div>
-                <div className="recent_good">
-                    <div className="ico_side">
-                        <img src="images/icons/ico_side_up.png" />
-                    </div>
-                    <div className="recent_good_txt">최근 본 상품</div>
-                    <div className="recent_img">
-                        <img src="images/icons/ico_center.jpeg" />
-                    </div>
-                    <div className="ico_side">
-                        <img src="images/icons/ico_side_down.png" />
-                    </div>
-                    {/* <div class="ico_side">
-                              <img src="images/icons/ico_side_down.png">
-                          </div> */}
-                </div>
-            </div>
-            <section className="loginForm">
-                <div className="login_tit">아이디 찾기</div>
-                <div className="form_box">
-                    <form className="write_form">
-                        <div className="form_tit">이름</div>
-                        <input placeholder="고객님의 이름을 입력해주세요" />
-                        <div className="form_tit upper">이메일</div>
-                        <input placeholder="가입 시 등록하신 이메일 주소를 입력해주세요" />
-                        <div className=" btnBox">
-                            <a href>
-                                <span className="loginBtn">확인</span>
-                            </a>
-                        </div>
-                    </form>
-                </div>
+            <section className="bnr_lists">
+                <ul className="lists">
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner1.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner2.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner3.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner4.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner5.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner6.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner7.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner8.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner9.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner10.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner1.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner2.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner3.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner4.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner5.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner6.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner7.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner8.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner9.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner10.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner1.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner2.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner3.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner4.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner5.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner6.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner7.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner8.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner9.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner10.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner1.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner2.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner3.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner4.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner5.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner6.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner7.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner8.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner9.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner10.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner1.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner2.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner3.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner4.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner5.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner6.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner7.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner8.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner9.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner10.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner1.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner2.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner3.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner4.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner5.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner6.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner7.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner8.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner9.png" />
+                        </a>
+                    </li>
+                    <li className="list">
+                        <a>
+                            <img src="images/banner/special_banner10.png" />
+                        </a>
+                    </li>
+                </ul>
             </section>
-            <section className=" type11">
+            <section className="type11">
                 <div className="t11_call">
                     <div className="t11_title">고객행복센터</div>
                     <div className="t11_call_info">
@@ -439,8 +703,7 @@ const Id_search = () => {
                         <span>개인정보처리방침</span>
                         <span>이용안내</span>
                     </div>
-                    <div>법인명(상호):주식회사 컬리 | 사업자등록번호:261-81-23567 <span className="stress">사업자정보 확인</span>
-                    </div>
+                    <div>법인명(상호):주식회사 컬리 | 사업자등록번호:261-81-23567 <span className="stress">사업자정보 확인</span></div>
                     <div>통신판매업:제 2018-서울강남-01646호 | 개인정보보호책임자:이원준</div>
                     <div>주소:서울특별시 강남구 테헤란로 133,18층(역삼동) | 대표이사:김슬아</div>
                     <div>입점문의:<span className="stress">입점문의하기</span> | 제휴문의 : <span className="stress">business@kurlycorp.com</span>
@@ -501,5 +764,4 @@ const Id_search = () => {
     );
 }
 
-
-export default Id_search;
+export default Event;

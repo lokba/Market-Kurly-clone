@@ -1,7 +1,7 @@
 import React from 'react';
 import './pw_search.css';
 
-const Pw_search = () => {
+const Pwd = () => {
     return (
 
         <div id="wrap">
@@ -503,4 +503,4 @@ const Pw_search = () => {
 }
 
 
-export default Pw_search;
+export default Pwd;

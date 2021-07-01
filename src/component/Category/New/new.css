@@ -45,6 +45,7 @@ header{
     margin-left:12px;
     background-color: #d8d8d8;
 }
+
 .register_link{
     color:#5f0080;
 }
@@ -215,12 +216,12 @@ nav{
 }
 #new{
     width:124px;
+    color:#5f0080;
+    font-weight: 700;
 }
 
 #best{
     width:116px;
-    color:#5f0080;
-    font-weight: 700;
 }
 #cheap{
     width:124px;
@@ -575,7 +576,7 @@ nav{
 .cart{
     width:45px;
     height:45px;
-    background-image: url("../images/goods/special/ico_cart.svg");
+    background-image: url("../../../images/goods/special/ico_cart.svg");
     cursor:pointer;
 }
 

@@ -8,7 +8,6 @@ const Best = () => {
             <header>
                 <div id="userMenu">
                     <a>
-                        {/* <img src="../images/icons/delivery.png" /> */}
                         <img src="images/icons/delivery.png" />
                     </a>
                     <div id="menu_lists">
