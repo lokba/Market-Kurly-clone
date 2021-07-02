@@ -48,20 +48,20 @@ const Footer = () => {
                     <div>팩스:070-7500-6098 | 이메일:<span className="stress">help@kurlycorp.com</span></div>
                     <div className="copyright">© KURLY CORP.ALL RIGHTS RESERVED</div>
                     <div className="sns">
-                        <a>
-                            <img src="images/icons/ico_instagram.png" />
+                        <a href="/">
+                            <img alt="" src="/images/icons/ico_instagram.png" />
                         </a>
-                        <a>
-                            <img src="images/icons/ico_fb.png" />
+                        <a href="/">
+                            <img alt="" src="/images/icons/ico_fb.png" />
                         </a>
-                        <a>
-                            <img src="images/icons/ico_blog.png" />
+                        <a href="/">
+                            <img alt="" src="/images/icons/ico_blog.png" />
                         </a>
-                        <a>
-                            <img src="images/icons/ico_naverpost.png" />
+                        <a href="/">
+                            <img alt="" src="/images/icons/ico_naverpost.png" />
                         </a>
-                        <a>
-                            <img src="images/icons/ico_youtube.png" />
+                        <a href="/">
+                            <img alt="" src="/images/icons/ico_youtube.png" />
                         </a>
                     </div>
                 </div>
@@ -71,8 +71,8 @@ const Footer = () => {
 
             <footer>
                 <div className="footer_link">
-                    <a className="link_img">
-                        <img src="images/icons/footer_img1.png" />
+                    <a href="/" className="link_img">
+                        <img alt="" src="/images/icons/footer_img1.png" />
                     </a>
                     <div className="txt">
                         <div>[인증범위]마켓컬리 쇼핑몰 서비스 개발 · 운영</div>
@@ -80,8 +80,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer_link">
-                    <a className="link_img">
-                        <img src="images/icons/footer_img2.png" />
+                    <a href="/" className="link_img">
+                        <img alt="" src="/images/icons/footer_img2.png" />
                     </a>
                     <div className="txt">
                         <div>개인정보보호 우수 웹사이트 ·</div>
@@ -89,8 +89,8 @@ const Footer = () => {
                     </div>
                 </div>
                 <div className="footer_link">
-                    <a className="payments">
-                        <img src=" images/icons/footer_img3.png" />
+                    <a href="/" className="payments">
+                        <img alt="" src="/images/icons/footer_img3.png" />
                     </a>
                     <div className="txt">
                         <div>고객님의 안전거래를 위해 현금 등으로 결제 시 저희 쇼핑몰에서 가입한</div>

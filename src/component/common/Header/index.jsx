@@ -248,23 +248,23 @@ const Header = () => {
         <>
             <header>
                 <div id="userMenu">
-                    <a>
-                        <img src="images/icons/delivery.png" />
+                    <a href="/">
+                        <img alt="" src="/images/icons/delivery.png" />
                     </a>
                     <div id="menu_lists">
                         <div id="register">
-                            <a href="register.html">
+                            <a href="/shop/member/join">
                                 <li className="register_link">회원가입</li>
                             </a>
                         </div>
                         <div id="login">
-                            <a href="login.html">
+                            <a href="/shop/member/login">
                                 <li>로그인</li>
                             </a>
                         </div>
                         <div id="info">
                             <li>고객센터</li>
-                            <img src="images/icons/ico_down.png" />
+                            <img alt="" src="/images/icons/ico_down.png" />
                             <ul className="subinfo">
                                 <li>공지사항</li>
                                 <li>자주하는 질문</li>
@@ -276,15 +276,15 @@ const Header = () => {
                     </div>
                 </div>
                 <div className="logoArea">
-                    <a href="index.html" id="logo">
-                        <img src="images/icons/logo_x2.png" />
+                    <a href="/" id="logo">
+                        <img alt="" src="/images/icons/logo_x2.png" />
                     </a>
                 </div>
             </header>
             <nav>
                 <div id="category">
                     <div className="category_info">
-                        <img id="categoryAll_img" src="images/icons/ico_all.png" />
+                        <img alt="" id="categoryAll_img" src="/images/icons/ico_all.png" />
                         <li className="category_tit">전체 카테고리</li>
                     </div>
                     <div className="gnb_menu">
@@ -313,24 +313,24 @@ const Header = () => {
                         </ul>
                     </div>
                 </div>
-                <a href="new.html">
+                <a href="/shop/goods/goods_list/new">
                     <li id="new" className="menu">신상품</li>
                 </a>
-                <a href="best.html">
+                <a href="/shop/goods/goods_list/best">
                     <li id="best" className="menu">베스트</li>
                 </a>
-                <a href="cheap.html">
+                <a href="/shop/goods/goods_list/sale">
                     <li id="cheap" className="menu">알뜰쇼핑</li>
                 </a>
-                <a href="special.html">
+                <a href="/shop/goods/event">
                     <li id="special" className="menu">특가/혜택</li>
                 </a>
                 <div id="search">
                     <input />
-                    <img src="images/icons/ico_search.png" />
+                    <img alt="" src="/images/icons/ico_search.png" />
                 </div>
                 <div id="location">
-                    <img id="location_img" src="images/icons/ico_location.svg" />
+                    <img alt="" id="location_img" src="/images/icons/ico_location.svg" />
                     <div className="location_subinfo">
                         <div><span>배송지를 등록</span>하고</div>
                         <div>구매 가능한 상품을 확인하세요!</div>
@@ -339,14 +339,14 @@ const Header = () => {
                                 <div className="location_loginBtn locationBtn">로그인</div>
                             </a>
                             <div className="location_addressBtn locationBtn">
-                                <img src="images/icons/ico_search_white.png" />
+                                <img alt="" src="/images/icons/ico_search_white.png" />
                                 <div>주소검색</div>
                             </div>
                         </div>
                     </div>
                 </div>
-                <a href="cart.html" id="cart">
-                    <img id="cart_img" src="images/icons/ico_cart.svg" />
+                <a href="/shop/goods/goods_cart" id="cart">
+                    <img alt="" id="cart_img" src="/images/icons/ico_cart.svg" />
                 </a>
             </nav>
         </>
