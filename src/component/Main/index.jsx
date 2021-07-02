@@ -5,7 +5,7 @@ import SideMenu from '../common/SideMenu/index';
 import ThreeItems from '../common/ThreeItems/index';
 import InstaReviewSection from '../InstaReviewSection/index';
 import KurlyRecipeSection from '../KurlyRecipeSection/index';
-
+import SaleSection from '../SaleSection/index';
 import './default.css';
 
 const Main = () => {
@@ -251,46 +251,60 @@ const Main = () => {
     const items8 = [
         {
             item_title: "해초면 냉채",
-            imgURL: "images/goods/kurly_recipe/noodle.png",
+            imgURL: "/images/goods/kurly_recipe/noodle.png",
         },
         {
             item_title: "포두부 라자냐",
-            imgURL: "images/goods/kurly_recipe/lasagna.jpeg",
+            imgURL: "/images/goods/kurly_recipe/lasagna.jpeg",
         },
         {
             item_title: "문어 뽈뽀",
-            imgURL: "images/goods/kurly_recipe/octopus.jpeg",
+            imgURL: "/images/goods/kurly_recipe/octopus.jpeg",
         },
     ];
 
     const items9 = [
         {
-            imgURL: "images/goods/instagram_review/img1.jpeg"
+            imgURL: "/images/goods/instagram_review/img1.jpeg"
         },
         {
-            imgURL: "images/goods/instagram_review/img2.jpeg"
+            imgURL: "/images/goods/instagram_review/img2.jpeg"
         },
         {
-            imgURL: "images/goods/instagram_review/img3.jpeg"
+            imgURL: "/images/goods/instagram_review/img3.jpeg"
         },
         {
-            imgURL: "images/goods/instagram_review/img4.jpeg"
+            imgURL: "/images/goods/instagram_review/img4.jpeg"
         },
         {
-            imgURL: "images/goods/instagram_review/img5.jpeg"
+            imgURL: "/images/goods/instagram_review/img5.jpeg"
         },
         {
-            imgURL: "images/goods/instagram_review/img6.jpeg"
+            imgURL: "/images/goods/instagram_review/img6.jpeg"
         },
     ];
 
-
-
+    const saleItems = [
+        {
+            item_title: "금주의 과일 · 채소 최대 15% 할인",
+            sub_title: "찰토마토부터 골드키위까지",
+            imgURL: "/images/goods/special_benefit/tomato.jpeg",
+        },
+        {
+            item_title: "애슐리 인기메뉴 최대 10% 할인",
+            sub_title: "치즈볼부터 양념치킨까지",
+            imgURL: "/images/goods/special_benefit/cheeseball.jpeg",
+        },
+        {
+            item_title: "제주도니 최대 15% 할인",
+            sub_title: "제주양돈농협의 돈육 브랜드",
+            imgURL: "/images/goods/special_benefit/meat.jpeg",
+        },
+    ]
 
     return (
         <div id="wrap">
             <Header />
-
             <section className="main_banner">
                 <div id="banner_img1">
                     <img src="images/banner/banner2.png" />
@@ -298,38 +312,8 @@ const Main = () => {
             </section>
 
             <SideMenu />
-
             <ThreeItems title="이 상품 어때요?" items={items1} />
-
-            <section className="goods type2">
-                <div className="title cursor_tit">
-                    특가/혜택 &gt;
-                </div>
-                <div className="t2_items_list">
-                    <div className="t2_item">
-                        <img src="images/goods/special_benefit/tomato.jpeg" />
-                        <div className="t2_title">금주의 과일 · 채소 최대 15% 할인</div>
-                        <div className="t2_sub">
-                            찰토마토부터 골드키위까지
-                        </div>
-                    </div>
-                    <div className="t2_item">
-                        <img src="images/goods/special_benefit/cheeseball.jpeg" />
-                        <div className="t2_title">애슐리 인기메뉴 최대 10% 할인</div>
-                        <div className="t2_sub">
-                            치즈볼부터 양념치킨까지
-                        </div>
-                    </div>
-                    <div className="t2_item">
-                        <img src="images/goods/special_benefit/meat.jpeg" />
-                        <div className="t2_title">제주도니 최대 15% 할인</div>
-                        <div className="t2_sub">
-                            제주양돈농협의 돈육 브랜드
-                        </div>
-                    </div>
-                </div>
-            </section>
-
+            <SaleSection title="특가/혜택 &gt;" items={saleItems} />
             <ThreeItems title="놓치면 후회할 가격 &gt;" items={items2} />
 
             <section className="main_bnr">
@@ -337,10 +321,11 @@ const Main = () => {
                     <img src="images/banner/icecream.png" />
                 </a>
             </section>
+
             <section className="type4">
                 <div className="title">
                     MD의 추천
-                      </div>
+                </div>
                 <div className="t4_category">
                     <ul className="list_category">
                         <li>
@@ -421,7 +406,7 @@ const Main = () => {
 
             <section id="footer_bnr" className="main_bnr">
                 <a className="main_bnr_link">
-                    <img src="images/banner/shipping.png" />
+                    <img alt="" src="images/banner/shipping.png" />
                 </a>
             </section>
 
