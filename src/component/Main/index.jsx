@@ -3,6 +3,8 @@ import Footer from '../common/Footer/index';
 import Header from '../common/Header/index';
 import SideMenu from '../common/SideMenu/index';
 import ThreeItems from '../common/ThreeItems/index';
+import InstaReviewSection from '../InstaReviewSection/index';
+import KurlyRecipeSection from '../KurlyRecipeSection/index';
 
 import './default.css';
 
@@ -246,6 +248,42 @@ const Main = () => {
             sticker: false,
         },
     ];
+    const items8 = [
+        {
+            item_title: "해초면 냉채",
+            imgURL: "images/goods/kurly_recipe/noodle.png",
+        },
+        {
+            item_title: "포두부 라자냐",
+            imgURL: "images/goods/kurly_recipe/lasagna.jpeg",
+        },
+        {
+            item_title: "문어 뽈뽀",
+            imgURL: "images/goods/kurly_recipe/octopus.jpeg",
+        },
+    ];
+
+    const items9 = [
+        {
+            imgURL: "images/goods/instagram_review/img1.jpeg"
+        },
+        {
+            imgURL: "images/goods/instagram_review/img2.jpeg"
+        },
+        {
+            imgURL: "images/goods/instagram_review/img3.jpeg"
+        },
+        {
+            imgURL: "images/goods/instagram_review/img4.jpeg"
+        },
+        {
+            imgURL: "images/goods/instagram_review/img5.jpeg"
+        },
+        {
+            imgURL: "images/goods/instagram_review/img6.jpeg"
+        },
+    ];
+
 
 
 
@@ -378,55 +416,9 @@ const Main = () => {
             <ThreeItems title="컬리, 여름을 부탁해! &gt;" items={items5} />
             <ThreeItems title="365일 최저가 도전 &gt;" subTitle="최저가 도전, 365일 언제나 알뜰하게" items={items6} />
             <ThreeItems title="식단 관리 &gt;" subTitle="실패 없는 식단 관리의 비결" items={items7} />
+            <KurlyRecipeSection title="컬리의 레시피 &gt;" items={items8} />
+            <InstaReviewSection title="인스타그램 고객 후기" items={items9} />
 
-            <section className="goods type9">
-                <div className="t9_title cursor_tit">
-                    컬리의 레시피 &gt;
-                </div>
-                <div className="t9_items_list">
-                    <div className="t9_item">
-                        <img src="images/goods/kurly_recipe/noodle.png" />
-                        <div className="item_title">해초면 냉채</div>
-                    </div>
-                    <div className="t9_item">
-                        <img src="images/goods/kurly_recipe/lasagna.jpeg" />
-                        <div className="item_title">포두부 라자냐</div>
-                    </div>
-                    <div className="t9_item">
-                        <img src="images/goods/kurly_recipe/octopus.jpeg" />
-                        <div className="item_title">문어 뽈뽀</div>
-                    </div>
-                </div>
-            </section>
-            <section className="goods type10">
-                <div className="t9_title">
-                    인스타그램 고객 후기
-                </div>
-                <div className="t10_items_list">
-                    <div className="t10_item">
-                        <img src="images/goods/instagram_review/img1.jpeg" />
-                    </div>
-                    <div className="t10_item">
-                        <img src="images/goods/instagram_review/img2.jpeg" />
-                    </div>
-                    <div className="t10_item">
-                        <img src="images/goods/instagram_review/img3.jpeg" />
-                    </div>
-                    <div className="t10_item">
-                        <img src="images/goods/instagram_review/img4.jpeg" />
-                    </div>
-                    <div className="t10_item">
-                        <img src="images/goods/instagram_review/img5.jpeg" />
-                    </div>
-                    <div className="t10_item">
-                        <img src="images/goods/instagram_review/img6.jpeg" />
-                    </div>
-                </div>
-                <div className="t10_subinfo">
-                    <div className="question">더 많은 고객 후기가 궁금하다면?</div>
-                    <div className="comment">@marketkurly_regram</div>
-                </div>
-            </section>
             <section id="footer_bnr" className="main_bnr">
                 <a className="main_bnr_link">
                     <img src="images/banner/shipping.png" />
