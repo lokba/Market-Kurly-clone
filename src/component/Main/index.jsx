@@ -3,6 +3,9 @@ import Footer from '../common/Footer/index';
 import Header from '../common/Header/index';
 import SideMenu from '../common/SideMenu/index';
 import ThreeItems from '../common/ThreeItems/index';
+import HomeBannerSection from '../HomeBannerSection/index';
+import HomeMdSection from '../HomeMdSection/index';
+import HomeRotateBannerSection from '../HomeRotatelBannerSection/index';
 import InstaReviewSection from '../InstaReviewSection/index';
 import KurlyRecipeSection from '../KurlyRecipeSection/index';
 import SaleSection from '../SaleSection/index';
@@ -300,96 +303,30 @@ const Main = () => {
             sub_title: "제주양돈농협의 돈육 브랜드",
             imgURL: "/images/goods/special_benefit/meat.jpeg",
         },
+    ];
+
+    const rotateImgs = [
+        "/images/banner/banner2.png",
     ]
+
+    const md_lists = [
+        "채소", "과일 · 견과 · 쌀", "수산 · 해산 · 건어물", "정육 · 계란", "국 · 반찬 · 메인요리",
+        "샐러드 · 간편식", "면 · 양념 · 오일", "생수 · 음료 · 우유 · 커피", "간식 · 과자 · 떡",
+        "베이커리 · 치즈 · 델리", "건강식품", "생활용품 · 리빙", "스킨케어 · 메이크업", "헤어 · 바디 · 구강",
+        "주방용품", "가전제품", "베이비 · 키즈", "반려동물"
+    ];
 
     return (
         <div id="wrap">
             <Header />
-            <section className="main_banner">
-                <div id="banner_img1">
-                    <img src="images/banner/banner2.png" />
-                </div>
-            </section>
-
+            <HomeRotateBannerSection rotateImgs={rotateImgs} />
             <SideMenu />
             <ThreeItems title="이 상품 어때요?" items={items1} />
             <SaleSection title="특가/혜택 &gt;" items={saleItems} />
             <ThreeItems title="놓치면 후회할 가격 &gt;" items={items2} />
+            <HomeBannerSection imgURL="/images/banner/icecream.png" />
+            <HomeMdSection title="MD의 추천" items={items3} lists={md_lists} />
 
-            <section className="main_bnr">
-                <a className="main_bnr_link">
-                    <img src="images/banner/icecream.png" />
-                </a>
-            </section>
-
-            <section className="type4">
-                <div className="title">
-                    MD의 추천
-                </div>
-                <div className="t4_category">
-                    <ul className="list_category">
-                        <li>
-                            <a className="t4_menu ">채소</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu t4_menu_on">과일 · 견과 · 쌀</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">수산 · 해산 · 건어물</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">정육 · 계란</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">국 · 반찬 · 메인요리</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">샐러드 · 간편식</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">면 · 양념 · 오일</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">생수 · 음료 · 우유 · 커피</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">간식 · 과자 · 떡</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">베이커리 · 치즈 · 델리</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">건강식품</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">생활용품 · 리빙</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">스킨케어 · 메이크업</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">헤어 · 바디 · 구강</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">주방용품</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">가전제품</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">베이비 · 키즈</a>
-                        </li>
-                        <li>
-                            <a className="t4_menu ">반려동물</a>
-                        </li>
-                    </ul>
-                </div>
-
-                <ThreeItems title="" items={items3} />
-                <div className="btn">
-                    <button>과일 · 견과 · 쌀 전체보기 &gt;</button>
-                </div>
-            </section>
             <section className="t4_bnr">
                 <div className="t4_bnr_content">
                     <div className="t4_bnr_txt1">장바구니 자랑하면 5천원의 행운이 매일!</div>
@@ -404,12 +341,8 @@ const Main = () => {
             <KurlyRecipeSection title="컬리의 레시피 &gt;" items={items8} />
             <InstaReviewSection title="인스타그램 고객 후기" items={items9} />
 
-            <section id="footer_bnr" className="main_bnr">
-                <a className="main_bnr_link">
-                    <img alt="" src="images/banner/shipping.png" />
-                </a>
-            </section>
-
+            {/* id="footer_bnr" 고려해야한다 */}
+            <HomeBannerSection imgURL="/images/banner/shipping.png" />
             <Footer />
         </div >
     );
