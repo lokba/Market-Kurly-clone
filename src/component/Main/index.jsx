@@ -6,6 +6,7 @@ import ThreeItems from '../common/ThreeItems/index';
 import HomeBannerSection from '../HomeBannerSection/index';
 import HomeMdSection from '../HomeMdSection/index';
 import HomeRotateBannerSection from '../HomeRotatelBannerSection/index';
+import HomeTxtBannerSection from '../HomeTxtBannerSection/index';
 import InstaReviewSection from '../InstaReviewSection/index';
 import KurlyRecipeSection from '../KurlyRecipeSection/index';
 import SaleSection from '../SaleSection/index';
@@ -316,6 +317,9 @@ const Main = () => {
         "주방용품", "가전제품", "베이비 · 키즈", "반려동물"
     ];
 
+    const bannerInfo = [
+        "장바구니 자랑하면 5천원의 행운이 매일!", "일 20분께 드리는 적립금 혜택!"
+    ]
     return (
         <div id="wrap">
             <Header />
@@ -326,15 +330,8 @@ const Main = () => {
             <ThreeItems title="놓치면 후회할 가격 &gt;" items={items2} />
             <HomeBannerSection imgURL="/images/banner/icecream.png" />
             <HomeMdSection title="MD의 추천" items={items3} lists={md_lists} />
-
-            <section className="t4_bnr">
-                <div className="t4_bnr_content">
-                    <div className="t4_bnr_txt1">장바구니 자랑하면 5천원의 행운이 매일!</div>
-                    <div className="t4_bnr_txt2">매일 20분께 드리는 적립금 혜택!</div>
-                </div>
-            </section>
-
-            <ThreeItems title="지금 가장 핫한 상품 &gt;" items={items4} />
+            <HomeTxtBannerSection bannerInfo={bannerInfo} />
+            < ThreeItems title="지금 가장 핫한 상품 &gt;" items={items4} />
             <ThreeItems title="컬리, 여름을 부탁해! &gt;" items={items5} />
             <ThreeItems title="365일 최저가 도전 &gt;" subTitle="최저가 도전, 365일 언제나 알뜰하게" items={items6} />
             <ThreeItems title="식단 관리 &gt;" subTitle="실패 없는 식단 관리의 비결" items={items7} />
