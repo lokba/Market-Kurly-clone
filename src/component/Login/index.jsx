@@ -1,7 +1,6 @@
 import React from 'react';
 import Footer from '../common/Footer/index';
 import Header from '../common/Header/index';
-import './login.css';
 import { LoginBox } from './styles';
 
 const Login = () => {

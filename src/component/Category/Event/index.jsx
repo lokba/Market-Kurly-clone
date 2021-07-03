@@ -1,7 +1,6 @@
 import React from 'react';
 import Footer from '../../common/Footer/index';
 import Header from '../../common/Header/index';
-import './special.css';
 import { CheapBox } from './styles';
 
 const Event = () => {

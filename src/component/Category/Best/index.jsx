@@ -5,7 +5,6 @@ import GoodListsHeader from '../../common/GoodListsHeader/index';
 import Header from '../../common/Header/index';
 import Pagination from '../../common/Pagination/index';
 import SideMenu from '../../common/SideMenu/index';
-import './best.css';
 import { BestBox } from './styles';
 
 const Best = () => {
