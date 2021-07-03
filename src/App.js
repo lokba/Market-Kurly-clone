@@ -14,7 +14,7 @@ import Main from './component/Main';
 function App() {
   return (
     <>
-      {/* <GlobalStyle /> */}
+      <GlobalStyle />
       <>
         <Route component={Main} path="/" exact />
         <Route component={Best} path="/shop/goods/goods_list/best" exact />

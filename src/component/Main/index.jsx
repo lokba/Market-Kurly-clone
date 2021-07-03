@@ -2,15 +2,15 @@ import React from 'react';
 import Footer from '../common/Footer/index';
 import Header from '../common/Header/index';
 import SideMenu from '../common/SideMenu/index';
-import ThreeItems from '../common/ThreeItems/index';
-import HomeBannerSection from '../HomeBannerSection/index';
-import HomeMdSection from '../HomeMdSection/index';
-import HomeRotateBannerSection from '../HomeRotatelBannerSection/index';
-import HomeTxtBannerSection from '../HomeTxtBannerSection/index';
-import InstaReviewSection from '../InstaReviewSection/index';
-import KurlyRecipeSection from '../KurlyRecipeSection/index';
-import SaleSection from '../SaleSection/index';
-import './default.css';
+import HomeMdSection from '../Home/HomeMdSection/index';
+import HomeRotateBannerSection from '../Home/HomeRotatelBannerSection/index';
+import HomeTxtBannerSection from '../Home/HomeTxtBannerSection/index';
+import HomeInstaReviewSection from '../Home/HomeInstaReviewSection/index';
+import HomeKurlyRecipeSection from '../Home/HomeKurlyRecipeSection/index';
+import HomeSaleSection from '../Home/HomeSaleSection/index';
+import HomeBannerSection from '../Home/HomeBannerSection/index';
+import HomeFourItems from '../common/HomeFourItems/index';
+import { MainBox } from './styles';
 
 const Main = () => {
     const items1 = [
@@ -321,27 +321,27 @@ const Main = () => {
         "장바구니 자랑하면 5천원의 행운이 매일!", "일 20분께 드리는 적립금 혜택!"
     ]
     return (
-        <div id="wrap">
+        <MainBox>
             <Header />
             <HomeRotateBannerSection rotateImgs={rotateImgs} />
             <SideMenu />
-            <ThreeItems title="이 상품 어때요?" items={items1} />
-            <SaleSection title="특가/혜택 &gt;" items={saleItems} />
-            <ThreeItems title="놓치면 후회할 가격 &gt;" items={items2} />
+            <HomeFourItems title="이 상품 어때요?" items={items1} />
+            <HomeSaleSection title="특가/혜택 &gt;" items={saleItems} />
+            <HomeFourItems title="놓치면 후회할 가격 &gt;" items={items2} />
             <HomeBannerSection imgURL="/images/banner/icecream.png" />
             <HomeMdSection title="MD의 추천" items={items3} lists={md_lists} />
             <HomeTxtBannerSection bannerInfo={bannerInfo} />
-            < ThreeItems title="지금 가장 핫한 상품 &gt;" items={items4} />
-            <ThreeItems title="컬리, 여름을 부탁해! &gt;" items={items5} />
-            <ThreeItems title="365일 최저가 도전 &gt;" subTitle="최저가 도전, 365일 언제나 알뜰하게" items={items6} />
-            <ThreeItems title="식단 관리 &gt;" subTitle="실패 없는 식단 관리의 비결" items={items7} />
-            <KurlyRecipeSection title="컬리의 레시피 &gt;" items={items8} />
-            <InstaReviewSection title="인스타그램 고객 후기" items={items9} />
+            <HomeFourItems title="지금 가장 핫한 상품 &gt;" items={items4} />
+            <HomeFourItems title="컬리, 여름을 부탁해! &gt;" items={items5} />
+            <HomeFourItems title="365일 최저가 도전 &gt;" subTitle="최저가 도전, 365일 언제나 알뜰하게" items={items6} />
+            <HomeFourItems title="식단 관리 &gt;" subTitle="실패 없는 식단 관리의 비결" items={items7} />
+            <HomeKurlyRecipeSection title="컬리의 레시피 &gt;" items={items8} />
+            <HomeInstaReviewSection title="인스타그램 고객 후기" items={items9} />
 
             {/* id="footer_bnr" 고려해야한다 */}
             <HomeBannerSection imgURL="/images/banner/shipping.png" />
             <Footer />
-        </div >
+        </MainBox>
     );
 }
 

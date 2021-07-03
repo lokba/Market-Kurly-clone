@@ -1,5 +1,6 @@
 import React from 'react';
 import Footer from '../../common/Footer/index';
+import GoodListsHeader from '../../common/GoodListsHeader/index';
 import Header from '../../common/Header/index';
 import SideMenu from '../../common/SideMenu/index';
 
@@ -11,44 +12,18 @@ const Sale = () => {
             <SideMenu />
             <section className="main_bnr">
                 <a className="main_bnr_link">
-                    <img alt="" src="images/goods/cheap/banner.png" />
+                    <img alt="" src="/images/goods/cheap/banner.png" />
                 </a>
             </section>
             <section className="content">
-                <div className="content_wrap">
-                    <div className="tit">알뜰쇼핑</div>
-                    <div className="inner_info">
-                        <div className="inner_txt">
-                            <span>전체보기</span>
-                        </div>
-                        <div className="ctrl">
-                            <div className="ctrl_tit">추천순</div>
-                            <div className="ctrl_img">
-                                <img alt="" src="/images/icons/ico_new_down.png" />
-                            </div>
-                            <div className="ctrl_off ctrl_img">
-                                <img alt="" src="/images/icons/ico_new_up.png" />
-                            </div>
-                            <div className="category_box">
-                                <ul className="ctrl_category">
-                                    <li>추천순</li>
-                                    <li>신상품순</li>
-                                    <li>인기상품순</li>
-                                    <li>혜택순</li>
-                                    <li>낮은 가격순</li>
-                                    <li>높은 가격순</li>
-                                </ul>
-                            </div>
-                        </div>
-                    </div>
-                </div>
+                <GoodListsHeader title="알뜰쇼핑" />
                 <div className="items_list">
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img1.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img1.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
-                        <div className="item_title">[라운드랩] 1025 독도 아이크림 30ml </div>
+                        <div className="item_title">[라운드랩] 1025 독도 아이스크림 30ml </div>
                         <div className="discount">
                             <span className="rate">80%</span>
                             <span className="after_price">7,000원</span>
@@ -57,7 +32,7 @@ const Sale = () => {
                         <div className="item_txt">산뜻 촉촉하게 관리하는 눈가 피부</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img2.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img2.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
@@ -70,7 +45,7 @@ const Sale = () => {
                         <div className="item_txt">장내 유익균 증식에 도움을 주는</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img3.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img3.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
@@ -83,7 +58,7 @@ const Sale = () => {
                         <div className="item_txt">고함량 콜라겐으로 탄력과 수분 충전</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img4.png" />
+                        <img className="good" src="/images/goods/cheap/img4.png" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
@@ -96,7 +71,7 @@ const Sale = () => {
                         <div className="item_txt">지금껏 경험해보지 못한 통기성</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img5.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img5.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
@@ -109,7 +84,7 @@ const Sale = () => {
                         <div className="item_txt">밀크씨슬 추출물을 함유한</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img6.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img6.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
@@ -122,7 +97,7 @@ const Sale = () => {
                         <div className="item_txt">언제 어디서나 즐기는 손 위생</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img7.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img7.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
@@ -135,7 +110,7 @@ const Sale = () => {
                         <div className="item_txt">편안한 하루를 위한 한 포</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img8.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img8.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>
@@ -148,7 +123,7 @@ const Sale = () => {
                         <div className="item_txt">미국 몽모랑시 품종으로 새큼하게 스며드는 붉은 빛 영양!</div>
                     </div>
                     <div className="item">
-                        <img className="good" src="images/goods/cheap/img9.jpeg" />
+                        <img className="good" src="/images/goods/cheap/img9.jpeg" />
                         <div className="cart_box">
                             <div className="cart" />
                         </div>

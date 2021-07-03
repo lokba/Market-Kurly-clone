@@ -1,4 +1,5 @@
 import React from 'react';
+import { HeaderBox, NavBox } from './styles';
 
 const Header = () => {
     const gnu_menu_lists = [
@@ -246,7 +247,7 @@ const Header = () => {
 
     return (
         <>
-            <header>
+            <HeaderBox>
                 <div id="userMenu">
                     <a href="/">
                         <img alt="" src="/images/icons/delivery.png" />
@@ -280,8 +281,8 @@ const Header = () => {
                         <img alt="" src="/images/icons/logo_x2.png" />
                     </a>
                 </div>
-            </header>
-            <nav>
+            </HeaderBox>
+            <NavBox>
                 <div id="category">
                     <div className="category_info">
                         <img alt="" id="categoryAll_img" src="/images/icons/ico_all.png" />
@@ -348,7 +349,7 @@ const Header = () => {
                 <a href="/shop/goods/goods_cart" id="cart">
                     <img alt="" id="cart_img" src="/images/icons/ico_cart.svg" />
                 </a>
-            </nav>
+            </NavBox>
         </>
     );
 };

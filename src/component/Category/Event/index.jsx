@@ -26,287 +26,37 @@ const Event = () => {
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner4.png" />
+                            <img src="/images/banner/special_banner4.png" />
                         </a>
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner5.png" />
+                            <img src="/images/banner/special_banner5.png" />
                         </a>
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner6.png" />
+                            <img src="/images/banner/special_banner6.png" />
                         </a>
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner7.png" />
+                            <img src="/images/banner/special_banner7.png" />
                         </a>
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner8.png" />
+                            <img src="/images/banner/special_banner8.png" />
                         </a>
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner9.png" />
+                            <img src="/images/banner/special_banner9.png" />
                         </a>
                     </li>
                     <li className="list">
                         <a>
-                            <img src="images/banner/special_banner10.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner1.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner2.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner3.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner4.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner5.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner6.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner7.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner8.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner9.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner10.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner1.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner2.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner3.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner4.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner5.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner6.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner7.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner8.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner9.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner10.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner1.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner2.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner3.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner4.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner5.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner6.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner7.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner8.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner9.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner10.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner1.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner2.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner3.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner4.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner5.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner6.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner7.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner8.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner9.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner10.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner1.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner2.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner3.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner4.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner5.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner6.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner7.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner8.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner9.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="images/banner/special_banner10.png" />
+                            <img src="/images/banner/special_banner10.png" />
                         </a>
                     </li>
                 </ul>

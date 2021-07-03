@@ -1,9 +1,10 @@
 import React from 'react';
+import { SideMenuBox } from './styles';
 
 const SideMenu = () => {
     return (
         <>
-            <div className="side_menu">
+            <SideMenuBox>
                 <div className="side_menu_img">
                     <img alt="" src="/images/icons/side_btn.png" />
                 </div>
@@ -22,7 +23,7 @@ const SideMenu = () => {
                         <img alt="" src="/images/icons/ico_side_down.png" />
                     </div>
                 </div>
-            </div>
+            </SideMenuBox>
         </>
     );
 };

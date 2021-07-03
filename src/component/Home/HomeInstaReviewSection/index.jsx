@@ -1,10 +1,11 @@
 import React from 'react';
+import { HomeInstaReviewBox } from './styles';
 
-const InstaReviewSection = ({ title, items }) => {
+const HomeInstaReviewSection = ({ title, items }) => {
     return (
         <>
-            <section className="goods type10">
-                <div className="t9_title">
+            <HomeInstaReviewBox>
+                <div className="title">
                     {title}
                 </div>
                 <div className="t10_items_list">
@@ -31,9 +32,9 @@ const InstaReviewSection = ({ title, items }) => {
                     <div className="question">더 많은 고객 후기가 궁금하다면?</div>
                     <div className="comment">@marketkurly_regram</div>
                 </div>
-            </section>
+            </HomeInstaReviewBox>
         </>
     );
 };
 
-export default InstaReviewSection;
+export default HomeInstaReviewSection;

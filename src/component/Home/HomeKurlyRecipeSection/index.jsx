@@ -1,9 +1,10 @@
 import React from 'react';
+import { HomeKurlyRecipeBox } from './styles';
 
-const KurlyRecipeSection = ({ title, items }) => {
+const HomeKurlyRecipeSection = ({ title, items }) => {
     return (
         <>
-            <section className="goods type9">
+            <HomeKurlyRecipeBox>
                 <div className="t9_title cursor_tit">
                     {title}
                 </div>
@@ -21,9 +22,9 @@ const KurlyRecipeSection = ({ title, items }) => {
                         <div className="item_title">{items[2].item_title}</div>
                     </div>
                 </div>
-            </section>
+            </HomeKurlyRecipeBox>
         </>
     );
 };
 
-export default KurlyRecipeSection;
+export default HomeKurlyRecipeSection;

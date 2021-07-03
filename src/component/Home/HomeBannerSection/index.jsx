@@ -1,15 +1,16 @@
 import React from 'react';
+import { HomeBannerBox } from './styles';
 
 
 //id="footer_bnr" -> height  : 160px,  없으면 140px
 const HomeBannerSection = ({ imgURL }) => {
     return (
         <>
-            <section className="main_bnr">
+            <HomeBannerBox>
                 <a href="/" className="main_bnr_link">
                     <img alt="" src={imgURL} />
                 </a>
-            </section>
+            </HomeBannerBox>
         </>
     );
 };

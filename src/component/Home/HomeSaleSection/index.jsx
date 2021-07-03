@@ -1,9 +1,10 @@
 import React from 'react';
+import { HomeSaleBox } from './styles';
 
-const SaleSection = ({ title, items }) => {
+const HomeSaleSection = ({ title, items }) => {
     return (
         <>
-            <section className="goods type2">
+            <HomeSaleBox>
                 <div className="title cursor_tit">
                     {title}
                 </div>
@@ -30,9 +31,9 @@ const SaleSection = ({ title, items }) => {
                         </div>
                     </div>
                 </div>
-            </section>
+            </HomeSaleBox>
         </>
     );
 };
 
-export default SaleSection;
+export default HomeSaleSection;

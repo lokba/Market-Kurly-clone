@@ -1,14 +1,25 @@
 import React from 'react';
+import { HomeFourItemsBox } from './styles';
 
 
 // subTitle에 대한 css 수정 필요
-const ThreeItems = ({ title, items, subTitle }) => {
+const HomeFourItems = ({ title, items, subTitle }) => {
     return (
-        <>
-            <div className="title">
-                {title}
-            </div>
-            <div className="t7_sub">{subTitle}</div>
+        <HomeFourItemsBox>
+            {
+                title &&
+                (
+                    <div className="title">
+                        {title}
+                    </div>
+                )
+            }
+            {
+                subTitle &&
+                (
+                    <div className="t7_sub">{subTitle}</div>
+                )
+            }
 
             <div className="items_list">
                 <div className="item">
@@ -52,8 +63,8 @@ const ThreeItems = ({ title, items, subTitle }) => {
                     <div className="before_price">{items[3].before_price}</div>
                 </div>
             </div>
-        </>
+        </HomeFourItemsBox>
     );
 };
 
-export default ThreeItems;
+export default HomeFourItems;

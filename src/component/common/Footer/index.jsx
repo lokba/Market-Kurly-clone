@@ -1,10 +1,11 @@
 import React from 'react';
+import { FooterBox } from './styles';
 // import './footer.css';
 
 
 const Footer = () => {
     return (
-        <>
+        <FooterBox>
             <section className="type11">
                 <div className="t11_call">
                     <div className="t11_title">고객행복센터</div>
@@ -98,7 +99,7 @@ const Footer = () => {
                     </div>
                 </div>
             </footer>
-        </>
+        </FooterBox>
     );
 };
 
