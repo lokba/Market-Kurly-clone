@@ -1,9 +1,10 @@
 import React from 'react';
+import { GoodListsHeaderBox } from './styles';
 
 const GoodListsHeader = ({ title }) => {
     return (
         <>
-            <div className="content_wrap">
+            <GoodListsHeaderBox>
                 <div className="tit">{title}</div>
                 <div className="inner_info">
                     <div className="inner_txt">
@@ -29,7 +30,7 @@ const GoodListsHeader = ({ title }) => {
                         </div>
                     </div>
                 </div>
-            </div>
+            </GoodListsHeaderBox>
         </>
     );
 };

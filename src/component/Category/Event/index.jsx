@@ -2,67 +2,59 @@ import React from 'react';
 import Footer from '../../common/Footer/index';
 import Header from '../../common/Header/index';
 import './special.css';
+import { CheapBox } from './styles';
 
 const Event = () => {
+    const events = [
+        {
+            imgURL: "/images/banner/special_banner1.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner2.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner3.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner4.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner5.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner6.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner7.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner8.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner9.png",
+        },
+        {
+            imgURL: "/images/banner/special_banner10.png",
+        },
+    ]
     return (
-        <div id="wrap">
+        <CheapBox>
             <Header />
             <section className="bnr_lists">
                 <ul className="lists">
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner1.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner2.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner3.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner4.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner5.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner6.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner7.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner8.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner9.png" />
-                        </a>
-                    </li>
-                    <li className="list">
-                        <a>
-                            <img src="/images/banner/special_banner10.png" />
-                        </a>
-                    </li>
+                    {
+                        events.map(event => (
+                            <li className="list">
+                                <a href="/shop/goods/event">
+                                    <img alt="" src={event.imgURL} />
+                                </a>
+                            </li>
+                        ))
+                    }
                 </ul>
             </section>
             <Footer />
-        </div>
+        </CheapBox>
 
     );
 }
