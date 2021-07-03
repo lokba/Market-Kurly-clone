@@ -41,7 +41,7 @@ export const GoodListsContentBox = styled.div`
     .cart{
         width:45px;
         height:45px;
-        background-image: url("../../imgs/ico_cart.svg");
+        background-image: url("/images/icons/add_cart.svg");
         cursor:pointer;
     }
 
