@@ -6,6 +6,7 @@ import Header from '../../common/Header/index';
 import Pagination from '../../common/Pagination/index';
 import SideMenu from '../../common/SideMenu/index';
 import './best.css';
+import { BestBox } from './styles';
 
 const Best = () => {
     const items = [
@@ -86,7 +87,7 @@ const Best = () => {
     ]
 
     return (
-        <div id="wrap">
+        <BestBox>
             <Header />
             <SideMenu />
 
@@ -96,7 +97,7 @@ const Best = () => {
                 <Pagination />
             </section>
             <Footer />
-        </div>
+        </BestBox>
     );
 };
 

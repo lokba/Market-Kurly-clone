@@ -2,17 +2,18 @@ import React from 'react';
 import Footer from '../common/Footer/index';
 import Header from '../common/Header/index';
 import './cart.css';
+import { CartBox } from './styles';
 
 const Cart = () => {
     return (
-        <div id="wrap">
+        <CartBox>
             <Header />
             <section className="cartBox">
                 <div className="cartBox_tit">장바구니</div>
                 <div className="cartContentBox">
                     <div className="cartItemContent">
                         <div className="select_ctrl">
-                            <img src="/images/icons/circle_unchecked.svg" />
+                            <img alt="" src="/images/icons/circle_unchecked.svg" />
                             <div className="ctrl_txt">전체선택(0/0)</div>
                             <div className="bar" />
                             <div className="ctrl_txt">선택삭제</div>
@@ -21,7 +22,7 @@ const Cart = () => {
                             장바구니에 담긴 상품이 없습니다.
                         </div>
                         <div className="select_ctrl">
-                            <img src="/images/icons/circle_unchecked.svg" />
+                            <img alt="" src="/images/icons/circle_unchecked.svg" />
                             <div>전체선택(0/0)</div>
                             <div className="bar" />
                             <div>선택삭제</div>
@@ -32,14 +33,14 @@ const Cart = () => {
                     <div className="cartInfoContent">
                         <div className="cartInfoBox">
                             <div className="cartInfo_tit">
-                                <img src="/images/icons/ico_location.svg" />
+                                <img alt="" src="/images/icons/ico_location.svg" />
                                 <div>배송지</div>
                             </div>
                             <div className="cartInfo_sub">
                                 <div><span className="stress">배송지를 입력</span>하고</div>
                                 <div>배송유형을 확인해 보세요!</div>
                                 <div className="addr">
-                                    <img src="/images/icons/register_search.svg" />
+                                    <img alt="" src="/images/icons/register_search.svg" />
                                     <div>주소 검색</div>
                                 </div>
                             </div>
@@ -79,7 +80,7 @@ const Cart = () => {
                 </div>
             </section>
             <Footer />
-        </div>
+        </CartBox>
     );
 }
 

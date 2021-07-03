@@ -1,16 +1,17 @@
 import styled from "styled-components";
 
-export const LoginBox = styled.div`
+export const FindBox = styled.div`
     width:100%;
 
-    .loginForm{
+    .findForm{
         width:340px;
         margin:0 auto;
         padding-top:90px;
         padding-bottom:120px;
     }
 
-    .login_tit{
+
+    .find_tit{
         font-size:20px;
         line-height:20px;
         text-align:center;
@@ -22,8 +23,18 @@ export const LoginBox = styled.div`
         display:flex;
         flex-direction:column;
     }
+    .form_tit{
+        margin-bottom:7px;
+        font-size:12px;
+        line-height: 18px;
+        font-weight:700;
+    }
 
-    .write_form > input{
+    .upper{
+        margin-top:11px;
+    }
+
+    .write_form>input{
         height:54px;
         padding:0 19px;
         border:1px solid #ccc;
@@ -32,50 +43,13 @@ export const LoginBox = styled.div`
         line-height:20px;
         outline:none;
         background-color:#fff;
-        margin-bottom:10px;
     }
 
-    .login_subInfo{
-        display:flex;
-        justify-content: space-between;
-        font-size:13px;
-        align-items: center;
-        padding-bottom:28px;
-    }
-
-    .clickBox{
-        display: flex;
-        align-items: center;
-        cursor:pointer;
-    }
-
-    .clickBox>div{
-        padding-left:3px;
-    }
-
-    .checkbox_save img{
-        margin-bottom:1px;
-    }
-
-    .off{
-        display:none;
-    }
-
-    .login_search{
-        color:black;
-    }
-
-    .bar{
-        background-color:#333;
-        width:1px;
-        margin:0 3px;
-        height:10px;
-        display:inline-block;
-    }
 
     .btnBox{
         display:flex;
         flex-direction: column;   
+        margin-top:30px;
     }
     .btnBox>a{
         display:block;
@@ -98,11 +72,6 @@ export const LoginBox = styled.div`
         background-color:#5f0080;
         color:white;
         margin-bottom:10px;
-    }
-
-    .registerBtn{
-        background-color:#fff;
-        color:#5f0080;
     }
 
 `;

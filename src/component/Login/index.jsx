@@ -2,10 +2,11 @@ import React from 'react';
 import Footer from '../common/Footer/index';
 import Header from '../common/Header/index';
 import './login.css';
+import { LoginBox } from './styles';
 
 const Login = () => {
     return (
-        <div id="wrap">
+        <LoginBox>
             <Header />
             <section className="loginForm">
                 <div className="login_tit">로그인</div>
@@ -16,20 +17,20 @@ const Login = () => {
                         <div className="login_subInfo">
                             <div className="checkbox_save">
                                 <div className="clickBox">
-                                    <img src="/images/icons/unchecked_bx.png" />
+                                    <img alt="" src="/images/icons/unchecked_bx.png" />
                                     <div>보안접속</div>
                                 </div>
                                 <div className="off clickBox">
-                                    <img src="/images/icons/checked_box.png" />
+                                    <img alt="" src="/images/icons/checked_box.png" />
                                     <div>보안접속</div>
                                 </div>
                             </div>
                             <div className="login_search">
-                                <a href="/shop/member/find_id">
+                                <a href="/shop/member/login/find_id">
                                     <span>아이디 찾기</span>
                                 </a>
                                 <span className="bar" />
-                                <a href="/shop/member/find_pwd">
+                                <a href="/shop/member/login/find_pwd">
                                     <span>비밀번호 찾기</span>
                                 </a>
                             </div>
@@ -46,7 +47,7 @@ const Login = () => {
                 </div>
             </section>
             <Footer />
-        </div>
+        </LoginBox>
 
     );
 }
