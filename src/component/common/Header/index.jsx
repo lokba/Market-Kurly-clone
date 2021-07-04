@@ -1,7 +1,14 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { HeaderBox, NavBox } from './styles';
 
-const Header = ({ lists }) => {
+const Header = ({ lists, urlProp }) => {
+
+    useEffect(() => {
+        if (urlProp) {
+            let menu = document.querySelector(`#${urlProp}`);
+            menu.classList.add("menu_on");
+        }
+    }, [urlProp]);
 
     return (
         <>
@@ -79,10 +86,10 @@ const Header = ({ lists }) => {
                     <li id="best" className="menu">베스트</li>
                 </a>
                 <a href="/shop/goods/goods_list/sale">
-                    <li id="cheap" className="menu">알뜰쇼핑</li>
+                    <li id="sale" className="menu">알뜰쇼핑</li>
                 </a>
                 <a href="/shop/goods/event">
-                    <li id="special" className="menu">특가/혜택</li>
+                    <li id="event" className="menu">특가/혜택</li>
                 </a>
                 <div id="search">
                     <input />

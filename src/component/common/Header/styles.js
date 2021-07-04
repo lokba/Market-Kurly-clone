@@ -228,15 +228,20 @@ export const NavBox = styled.div`
     #best{
         width:116px;
     }
-    #cheap{
+
+    #sale{
         width:124px;
     }
-    #special{
+    #event{
         width:116px;
     }
     #search{
         display: flex;
         margin-left:14px;
+    }
+    .menu_on{
+        color:#5f0080;
+        font-weight: 700;
     }
 
 

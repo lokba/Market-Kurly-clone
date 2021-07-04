@@ -1,7 +1,8 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import Header from '../component/common/Header/index';
 
-const HeaderContainer = () => {
+const HeaderContainer = ({ match }) => {
     const gnu_menu_lists = [
         {
             menu_txt: "채소",
@@ -244,9 +245,25 @@ const HeaderContainer = () => {
         },
     ];
 
+    let url = match.path;
+    let urlProp;
+
+    if (url.includes("best")) {
+        urlProp = "best";
+    }
+    else if (url.includes("new")) {
+        urlProp = "new";
+    }
+    else if (url.includes("sale")) {
+        urlProp = "sale";
+    }
+    else if (url.includes("event")) {
+        urlProp = "event";
+    }
+
     return (
-        <Header lists={gnu_menu_lists} />
+        <Header lists={gnu_menu_lists} urlProp={urlProp} />
     );
 };
 
-export default HeaderContainer;
+export default withRouter(HeaderContainer);

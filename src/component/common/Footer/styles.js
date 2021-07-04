@@ -35,12 +35,12 @@ export const FooterBox = styled.div`
         padding-top:4px;
     }
 
-    .list{
+    .call_list{
         display:flex;
         flex-direction: column;
         font-size:14px;
     }
-    .list div{
+    .call_list div{
         display:flex;
         align-items: center;
     }
