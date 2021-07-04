@@ -1,4 +1,5 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import Find from '../component/Find/index';
 
 const FindContainer = ({ match }) => {
@@ -9,4 +10,4 @@ const FindContainer = ({ match }) => {
     );
 };
 
-export default FindContainer;
+export default withRouter(FindContainer);

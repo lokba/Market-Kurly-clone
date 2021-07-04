@@ -1,31 +1,29 @@
 import { Route } from 'react-router';
-import Cart from './component/Cart';
-import Best from './component/Category/Best';
-import Event from './component/Category/Event';
-import New from './component/Category/New';
-import Sale from './component/Category/Sale';
-import GlobalStyle from './component/common/GlobalStyle';
-import Find from './component/Find/index';
-import Join from './component/Join';
-import Login from './component/Login';
-import Main from './component/Main';
-import BestContainer from './container/BestContainer';
+import GlobalStyle from './component/common/GlobalStyle/index';
+import BestPage from './pages/BestPage';
+import CartPage from './pages/CartPage';
+import EventPage from './pages/EventPage';
+import FindPage from './pages/FindPage';
+import JoinPage from './pages/JoinPage';
+import LoginPage from './pages/LoginPage';
+import MainPage from './pages/MainPage';
+import NewPage from './pages/NewPage';
+import SalePage from './pages/SalePage';
 
 function App() {
   return (
     <>
       <GlobalStyle />
-      <Route component={Main} path="/" exact />
-      <Route component={BestContainer} path="/shop/goods/goods_list/best" exact />
-      <Route component={New} path="/shop/goods/goods_list/new" exact />
-      <Route component={Sale} path="/shop/goods/goods_list/sale" exact />
-      <Route component={Event} path="/shop/goods/event" exact />
-      <Route component={Join} path="/shop/member/join" exact />
-      <Route component={Login} path="/shop/member/login" exact />
-      <Route component={Find} path="/shop/member/login/:find" exact />
-      <Route component={Cart} path="/shop/goods/goods_cart" exact />
+      <Route component={MainPage} path="/" exact />
+      <Route component={BestPage} path="/shop/goods/goods_list/best" exact />
+      <Route component={NewPage} path="/shop/goods/goods_list/new" exact />
+      <Route component={SalePage} path="/shop/goods/goods_list/sale" exact />
+      <Route component={EventPage} path="/shop/goods/event" exact />
+      <Route component={JoinPage} path="/shop/member/join" exact />
+      <Route component={LoginPage} path="/shop/member/login" exact />
+      <Route component={FindPage} path="/shop/member/login/:find" exact />
+      <Route component={CartPage} path="/shop/goods/goods_cart" exact />
     </>
-
   );
 }
 
