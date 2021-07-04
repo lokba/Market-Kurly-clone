@@ -1,6 +1,5 @@
 import React from 'react';
 import Footer from '../common/Footer/index';
-import Header from '../common/Header/index';
 import SideMenu from '../common/SideMenu/index';
 import HomeMdSection from '../Home/HomeMdSection/index';
 import HomeRotateBannerSection from '../Home/HomeRotatelBannerSection/index';
@@ -11,6 +10,7 @@ import HomeSaleSection from '../Home/HomeSaleSection/index';
 import HomeBannerSection from '../Home/HomeBannerSection/index';
 import HomeFourItems from '../common/HomeFourItems/index';
 import { MainBox } from './styles';
+import HeaderContainer from '../../container/HeaderContainer';
 
 const Main =
     ({
@@ -33,7 +33,7 @@ const Main =
 
         return (
             <MainBox>
-                <Header />
+                <HeaderContainer />
                 <HomeRotateBannerSection rotateImgs={rotateImgs} />
                 <SideMenu />
                 <HomeFourItems title={homeSectionTitles[0].title} items={items1} />

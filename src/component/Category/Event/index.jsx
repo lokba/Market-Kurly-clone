@@ -1,12 +1,12 @@
 import React from 'react';
+import HeaderContainer from '../../../container/HeaderContainer';
 import Footer from '../../common/Footer/index';
-import Header from '../../common/Header/index';
 import { CheapBox } from './styles';
 
 const Event = ({ events }) => {
     return (
         <CheapBox>
-            <Header />
+            <HeaderContainer />
             <section className="bnr_lists">
                 <ul className="lists">
                     {

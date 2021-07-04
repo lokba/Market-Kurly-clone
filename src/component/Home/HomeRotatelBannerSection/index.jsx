@@ -4,7 +4,7 @@ import { RotateBannerBox } from './styles';
 const HomeRotateBannerSection = ({ rotateImgs }) => {
     return (
         <RotateBannerBox>
-            <div id="banner_img1">
+            <div id="banner_img">
                 <img alt="" src={rotateImgs} />
             </div>
         </RotateBannerBox >

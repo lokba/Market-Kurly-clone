@@ -1,8 +1,8 @@
 import React from 'react';
+import HeaderContainer from '../../../container/HeaderContainer';
 import Footer from '../../common/Footer/index';
 import GoodListsContent from '../../common/GoodListsContent/index';
 import GoodListsHeader from '../../common/GoodListsHeader/index';
-import Header from '../../common/Header/index';
 import Pagination from '../../common/Pagination/index';
 import SideMenu from '../../common/SideMenu/index';
 import { MainBnr, MainBnrLink, SaleBox } from './styles';
@@ -11,7 +11,7 @@ const Sale = ({ title, items }) => {
 
     return (
         <SaleBox>
-            <Header />
+            <HeaderContainer />
             <SideMenu />
             <MainBnr>
                 <MainBnrLink>

@@ -6,7 +6,7 @@ export const HomeMdBox = styled.div`
     justify-content: center;
     flex-direction:column;
     align-items: center;
-    
+
     .title{
         padding:79px 0 35px;
         font-size:28px;
@@ -42,7 +42,7 @@ export const HomeMdBox = styled.div`
         margin-bottom:15px;
     }
 
-    .t4_menu{
+    .menu{
         padding:0 20px;
         /* display:inline-block; */
         border-radius: 20px;
@@ -54,14 +54,14 @@ export const HomeMdBox = styled.div`
         align-items: center;
     }
 
-    .t4_menu:hover{
+    .menu:hover{
         /* color:white; */
         color:#5f0080;
         /* background-color:#5f0080; */
         font-weight:700;
     }
 
-    .t4_menu_on{
+    .menu_on{
         color:white;
         background-color:#5f0080;
         font-weight:700;

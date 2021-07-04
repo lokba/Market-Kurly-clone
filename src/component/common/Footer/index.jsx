@@ -6,33 +6,33 @@ import { FooterBox } from './styles';
 const Footer = () => {
     return (
         <FooterBox>
-            <section className="type11">
-                <div className="t11_call">
-                    <div className="t11_title">고객행복센터</div>
-                    <div className="t11_call_info">
+            <section className="type">
+                <div className="call">
+                    <div className="title">고객행복센터</div>
+                    <div className="call_info">
                         <div className="phone">1644-1107</div>
-                        <div className="t11_list">
+                        <div className="list">
                             <div className="place">365고객센터</div>
                             <div className="time">오전 7시 ~ 오후 7시</div>
                         </div>
                     </div>
-                    <div className="t11_call_info">
+                    <div className="call_info">
                         <div className="box">카카오톡 문의</div>
-                        <div className="t11_list">
+                        <div className="list">
                             <div className="place">365고객센터</div>
                             <div className="time">오전 7시 ~ 오후 7시</div>
                         </div>
                     </div>
-                    <div className="t11_call_info">
+                    <div className="call_info">
                         <div className="box">1:1 문의</div>
-                        <div className="t11_list">
+                        <div className="list">
                             <div className="place">24시간 접수 가능</div>
                             <div className="time">고객센터 운영시간에 순차적으로 답변해드리겠습니다.</div>
                         </div>
                     </div>
                 </div>
-                <div className="t11_info">
-                    <div className="t11_menu">
+                <div className="info">
+                    <div className="menu">
                         <span>컬리소개</span>
                         <span>컬리소개영상</span>
                         <span>인재채용</span>
@@ -67,8 +67,6 @@ const Footer = () => {
                     </div>
                 </div>
             </section>
-
-
 
             <footer>
                 <div className="footer_link">

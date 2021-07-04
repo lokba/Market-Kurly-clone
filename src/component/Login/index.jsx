@@ -1,12 +1,12 @@
 import React from 'react';
+import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
-import Header from '../common/Header/index';
 import { LoginBox } from './styles';
 
 const Login = () => {
     return (
         <LoginBox>
-            <Header />
+            <HeaderContainer />
             <section className="loginForm">
                 <div className="login_tit">로그인</div>
                 <div className="form_box">

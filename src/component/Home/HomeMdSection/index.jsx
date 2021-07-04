@@ -8,13 +8,13 @@ const HomeMdSection = ({ items, lists, title }) => {
             <div className="title">
                 {title}
             </div>
-            <div className="t4_category">
+            <div className="category">
                 <ul className="list_category">
                     {
                         lists.map(list =>
                             <li>
                                 {/* className="t4_menu_on" 일때 색깔 변경 */}
-                                <a href="/" className="t4_menu" >{list}</a>
+                                <a href="/" className="menu" >{list}</a>
                             </li>
                         )
                     }

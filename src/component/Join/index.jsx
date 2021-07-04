@@ -1,13 +1,13 @@
 import React from 'react';
+import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
-import Header from '../common/Header/index';
 import SideMenu from '../common/SideMenu/index';
 import { JoinBox } from './styles';
 
 const Join = () => {
     return (
         <JoinBox>
-            <Header />
+            <HeaderContainer />
             <SideMenu />
             <section className="registerForm">
                 <div className="register_tit">회원가입</div>

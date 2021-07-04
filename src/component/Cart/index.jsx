@@ -1,12 +1,12 @@
 import React from 'react';
+import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
-import Header from '../common/Header/index';
 import { CartBox } from './styles';
 
 const Cart = () => {
     return (
         <CartBox>
-            <Header />
+            <HeaderContainer />
             <section className="cartBox">
                 <div className="cartBox_tit">장바구니</div>
                 <div className="cartContentBox">

@@ -9,23 +9,23 @@ export const HomeInstaReviewBox = styled.div`
         text-align:center;
     }
     
-    .t10_items_list{
+    .items_list{
         display:flex;
         justify-content: center;
     }
 
-    .t10_item{
+    .item{
         width:175px;
         height:175px;
     }
 
-    .t10_item img{
+    .item img{
         width:100%;
         height:100%;
         cursor: pointer;
     }
 
-    .t10_subinfo{
+    .subinfo{
         margin:39px 0 100px;
         display: flex;
         flex-direction: column;

@@ -2,7 +2,7 @@ import styled from "styled-components";
 
 export const FooterBox = styled.div`
     
-    .type11{
+    .type{
         padding-top:29px;
         padding-bottom:20px;
         height:302px;
@@ -12,16 +12,16 @@ export const FooterBox = styled.div`
         
     }
 
-    .t11_call{
+    .call{
         width:534px;
         /* height:302px; */
     }
-    .t11_title{
+    .title{
         font-size:20px;
         padding-bottom:2px;
         line-height:24px;
     }
-    .t11_call_info{
+    .call_info{
         display:flex;
         padding-top:20px;
     }
@@ -35,12 +35,12 @@ export const FooterBox = styled.div`
         padding-top:4px;
     }
 
-    .t11_list{
+    .list{
         display:flex;
         flex-direction: column;
         font-size:14px;
     }
-    .t11_list div{
+    .list div{
         display:flex;
         align-items: center;
     }
@@ -66,19 +66,19 @@ export const FooterBox = styled.div`
         cursor:pointer;
     }
 
-    .t11_info{
+    .info{
         font-size:14px;
         line-height:20px;
         color:#999;
     }
 
-    .t11_menu{
+    .menu{
         padding-bottom:29px;
         color:#333;
         line-height:18px;
         cursor:pointer;
     }
-    .t11_menu span{
+    .menu span{
         padding-right:16px;
     }
 
