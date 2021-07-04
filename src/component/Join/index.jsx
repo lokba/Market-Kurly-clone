@@ -45,7 +45,7 @@ const Join = () => {
                             <div className="form_list_title">주소<span className="must_input">*</span></div>
                             <div className="addr_search">
                                 <div className="addr">
-                                    <img src="/images/icons/register_search.svg" />
+                                    <img alt="" src="/images/icons/register_search.svg" />
                                     <div>주소 검색</div>
                                 </div>
                                 <span>배송지에 따라 상품 정보가 달라질 수 있습니다.</span>
@@ -106,28 +106,28 @@ const Join = () => {
                                 <div className="agree_list_title">이용약관동의<span className="must_input">*</span></div>
                                 <ul className="agree_item">
                                     <li>
-                                        <img src="/images/icons/circle_unchecked.svg" />
+                                        <img alt="" src="/images/icons/circle_unchecked.svg" />
                                         <div className="agree_all">
                                             <div className="agreeAll">전체 동의합니다.</div>
                                             <div className="agreeAll_sub">선택항목에 동의하지 않은 경우도 회원가입 및 일반적인 서비스를 이용할 수 있습니다.</div>
                                         </div>
                                     </li>
                                     <li className="viewTerm">
-                                        <img src="/images/icons/circle_unchecked.svg" />
+                                        <img alt="" src="/images/icons/circle_unchecked.svg" />
                                         <div className="viewTermItem">
                                             <div>이용약관 동의<span className="agreeItem_stress"> (필수)</span></div>
                                             <div className="link_term">약관 보기 &gt;</div>
                                         </div>
                                     </li>
                                     <li className="viewTerm">
-                                        <img src="/images/icons/circle_unchecked.svg" />
+                                        <img alt="" src="/images/icons/circle_unchecked.svg" />
                                         <div className="viewTermItem">
                                             <div>개인정보 수집·이용 동의 <span className="agreeItem_stress"> (필수)</span></div>
                                             <div className="link_term">약관 보기 &gt;</div>
                                         </div>
                                     </li>
                                     <li className="viewTerm">
-                                        <img src="/images/icons/circle_unchecked.svg" />
+                                        <img alt="" src="/images/icons/circle_unchecked.svg" />
                                         <div className="viewTermItem">
                                             <div>개인정보 수집·이용 동의<span className="agreeItem_stress"> (선택)</span></div>
                                             <div className="link_term">약관 보기 &gt;</div>
@@ -135,26 +135,26 @@ const Join = () => {
                                     </li>
                                     <li className="benefit_item">
                                         <div className="benefit_topItem">
-                                            <img src="/images/icons/circle_unchecked.svg" />
+                                            <img alt="" src="/images/icons/circle_unchecked.svg" />
                                             {/* <div class="benefitItem"> */}
                                             <div>무료배송, 할인쿠폰 등 혜택/정보 수신 동의<span className="agreeItem_stress"> (선택)</span>
                                             </div>
                                             {/* </div> */}
                                         </div>
                                         <div className="agreeType">
-                                            <img src="/images/icons/circle_unchecked.svg" />
+                                            <img alt="" src="/images/icons/circle_unchecked.svg" />
                                             <span>SMS</span>
-                                            <img src="/images/icons/circle_unchecked.svg" />
+                                            <img alt="" src="/images/icons/circle_unchecked.svg" />
                                             <span>이메일</span>
                                         </div>
                                         <div className="agreeType_sub">
-                                            <img src="/images/icons/register_sub_ico.svg" />
+                                            <img alt="" src="/images/icons/register_sub_ico.svg" />
                                             <div>동의 시 한달 간[5%적립]+[무제한 무료배송]<span className="agreeItem_stress">(첫 주문 후
                                         적용)</span></div>
                                         </div>
                                     </li>
                                     <li className="viewTerm">
-                                        <img src="/images/icons/circle_unchecked.svg" />
+                                        <img alt="" src="/images/icons/circle_unchecked.svg" />
                                         <div className="viewTermItem">
                                             <div>본인은 만 14세 이상입니다.<span className="viewTerm_stress"> (필수)</span></div>
                                         </div>

@@ -5,16 +5,14 @@ import SideMenu from '../common/SideMenu/index';
 import { FindBox } from './styles';
 
 
-const Find = ({ match }) => {
-    const { find: find_param } = match.params;
-
+const Find = ({ param }) => {
     return (
         <FindBox>
             <Header />
             <SideMenu />
             <section className="findForm">
                 {
-                    find_param === "find_id" &&
+                    param === "find_id" &&
                     (
                         <>
                             <div className="find_tit">아이디 찾기</div>
@@ -35,7 +33,7 @@ const Find = ({ match }) => {
                     )
                 }
                 {
-                    find_param === "find_pwd" &&
+                    param === "find_pwd" &&
                     (
                         <>
                             <div className="find_tit">비밀번호 찾기</div>
