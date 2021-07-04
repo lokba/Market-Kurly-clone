@@ -1,4 +1,5 @@
 import React from 'react';
+import Sticker from '../Sticker/index';
 import { GoodListsContentBox } from './styles';
 
 const GoodListsContent = ({ items }) => {
@@ -10,6 +11,7 @@ const GoodListsContent = ({ items }) => {
                     (
                         <div className="item">
                             <img alt="" className="good" src={item.imgURL} />
+                            {item.sticker && <Sticker />}
                             <div className="cart_box">
                                 <div className="cart" />
                             </div>

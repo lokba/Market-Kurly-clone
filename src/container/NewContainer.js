@@ -10,6 +10,7 @@ const NewContainer = () => {
             after_price: "3,500원",
             before_price: "",
             item_txt: "우리 아이를 위한 요거트",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img2.jpeg",
@@ -18,6 +19,7 @@ const NewContainer = () => {
             after_price: "73,600원",
             before_price: "",
             item_txt: "요리 대가들의 이유 있는 선택",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img3.jpeg",
@@ -26,6 +28,7 @@ const NewContainer = () => {
             after_price: "1,690원",
             before_price: "",
             item_txt: "남길 걱정 없는 만능 채소",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img4.jpeg",
@@ -34,6 +37,7 @@ const NewContainer = () => {
             after_price: "2,990원",
             before_price: "",
             item_txt: "풍부한 영양인 담긴 초록 꽃송이",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img5.jpeg",
@@ -42,6 +46,7 @@ const NewContainer = () => {
             after_price: "2,272원",
             before_price: "2,990원",
             item_txt: "단단하고 아삭한 필수 채소",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img6.jpeg",
@@ -50,6 +55,7 @@ const NewContainer = () => {
             after_price: "2,490원",
             before_price: "",
             item_txt: "간편하게 즐기는 초록 꽃송이",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img7.jpeg",
@@ -58,6 +64,7 @@ const NewContainer = () => {
             after_price: "990원",
             before_price: "",
             item_txt: "간편하게 누리는 깊고 부드러운 풍미",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img8.jpeg",
@@ -66,6 +73,7 @@ const NewContainer = () => {
             after_price: "38,000원",
             before_price: "",
             item_txt: "다양하게 활용하는 닭고기 주식",
+            sticker: false,
         },
         {
             imgURL: "/images/goods/special/img9.jpeg",
@@ -74,6 +82,7 @@ const NewContainer = () => {
             after_price: "3,800원",
             before_price: "",
             item_txt: "소스,가쓰오부시까지 알찬 구성",
+            sticker: false,
         },
     ];
 

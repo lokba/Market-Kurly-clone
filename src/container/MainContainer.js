@@ -318,33 +318,33 @@ const MainContainer = () => {
 
     const homeSectionTitles = [
         {
-            title: "이 상품 어때요",
+            title: "이 상품 어때요?",
         },
         {
-            title: "특가/혜택 &gt;",
+            title: "특가/혜택 >",
         },
         {
-            title: "놓치면 후회할 가격 &gt;",
+            title: "놓치면 후회할 가격 >",
         },
         {
             title: "MD의 추천",
         },
         {
-            title: "지금 가장 핫한 상품 &gt;",
+            title: "지금 가장 핫한 상품 >",
         },
         {
-            title: "컬리, 여름을 부탁해! &gt;",
+            title: "컬리, 여름을 부탁해! > ",
         },
         {
-            title: "365일 최저가 도전 &gt;",
+            title: "365일 최저가 도전 >",
             subTitle: "최저가 도전, 365일 언제나 알뜰하게",
         },
         {
-            title: "식단 관리 &gt;",
+            title: "식단 관리 >",
             subTitle: "실패 없는 식단 관리의 비결",
         },
         {
-            title: "컬리의 레시피 &gt;",
+            title: "컬리의 레시피 >",
         },
         {
             title: "인스타그램 고객 후기",

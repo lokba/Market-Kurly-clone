@@ -84,7 +84,7 @@ export const HomeFourItemsBox = styled.div`
         justify-content: center;
     } 
 
-    .t7_sub{
+    .sub{
         font-size:16px;
         font-weight:400;
         text-align:center;
@@ -93,5 +93,6 @@ export const HomeFourItemsBox = styled.div`
         color:#999;
         line-height:20px;
         margin-top:10px;
+        cursor:pointer;
     }
 `;

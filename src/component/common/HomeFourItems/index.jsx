@@ -1,4 +1,5 @@
 import React from 'react';
+import Sticker from '../Sticker/index';
 import { HomeFourItemsBox } from './styles';
 
 
@@ -17,14 +18,14 @@ const HomeFourItems = ({ title, items, subTitle }) => {
             {
                 subTitle &&
                 (
-                    <div className="t7_sub">{subTitle}</div>
+                    <div className="sub">{subTitle}</div>
                 )
             }
 
             <div className="items_list">
                 <div className="item">
                     <img alt="" src={items[0].imgURL} />
-                    {items[0].sticker && <div className="sticker">기획특가</div>}
+                    {items[0].sticker && <Sticker />}
                     <div className="item_title">{items[0].item_title}</div>
                     <div className="discount">
                         <span className="rate">{items[0].rate}</span>
@@ -34,7 +35,7 @@ const HomeFourItems = ({ title, items, subTitle }) => {
                 </div>
                 <div className="item">
                     <img alt="" src={items[1].imgURL} />
-                    {items[1].sticker && <div className="sticker">기획특가</div>}
+                    {items[1].sticker && <Sticker />}
                     <div className="item_title">{items[1].item_title}</div>
                     <div className="discount">
                         <span className="rate">{items[1].rate}</span>
@@ -44,7 +45,7 @@ const HomeFourItems = ({ title, items, subTitle }) => {
                 </div>
                 <div className="item">
                     <img alt="" src={items[2].imgURL} />
-                    {items[2].sticker && <div className="sticker">기획특가</div>}
+                    {items[2].sticker && <Sticker />}
                     <div className="item_title">{items[2].item_title}</div>
                     <div className="discount">
                         <span className="rate">{items[2].rate}</span>
@@ -54,7 +55,7 @@ const HomeFourItems = ({ title, items, subTitle }) => {
                 </div>
                 <div className="item">
                     <img alt="" src={items[3].imgURL} />
-                    {items[3].sticker && <div className="sticker">기획특가</div>}
+                    {items[3].sticker && <Sticker />}
                     <div className="item_title">{items[3].item_title}</div>
                     <div className="discount">
                         <span className="rate">{items[3].rate}</span>
