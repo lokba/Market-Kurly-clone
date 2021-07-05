@@ -1,8 +1,10 @@
 import HomeFourItems from '../../common/HomeFourItems/index';
-import React from 'react';
+import React, { useState } from 'react';
 import { HomeMdBox } from './styles';
 
 const HomeMdSection = ({ items, lists, title }) => {
+    const [click, setClick] = useState(0);
+
     return (
         <HomeMdBox>
             <div className="title">
@@ -11,10 +13,9 @@ const HomeMdSection = ({ items, lists, title }) => {
             <div className="category">
                 <ul className="list_category">
                     {
-                        lists.map(list =>
-                            <li>
-                                {/* className="t4_menu_on" 일때 색깔 변경 */}
-                                <a href="/" className="menu" >{list}</a>
+                        lists.map((list, index) =>
+                            <li key={index}>
+                                <a className={click === index ? "menu menu_on" : "menu"} onClick={(e) => { e.target.classList.add("menu_on"); setClick(index); }} >{list}</a>
                             </li>
                         )
                     }
@@ -22,7 +23,7 @@ const HomeMdSection = ({ items, lists, title }) => {
             </div>
             <HomeFourItems title="" items={items} />
             <div className="btn">
-                <button>과일 · 견과 · 쌀 전체보기 &gt;</button>
+                <button>{lists[click]} 전체보기 &gt;</button>
             </div>
         </HomeMdBox>
     );
