@@ -92,38 +92,38 @@ const Header = ({ lists, urlProp }) => {
         gnb_menu.style.width = "219px";
     }
 
+
+    // ----------------------------------------------------------------------------------
     let gnb_menu_list = document.querySelectorAll(".gnb_menu_list");
     const gnb_menu_lists = Array.from(gnb_menu_list);
 
     gnb_menu_lists.map(value => value.addEventListener("mouseover", () => {
-        value.classList.add("current");
         const currentInfo = value.querySelector(".sub_menu");
         const currentParent = value.querySelector(".inner_menu");
+        const inner_menu = value.querySelector('.inner_menu');
+        let all_icon = inner_menu.querySelector('img');
+
         currentInfo.style.display = "block";
         currentParent.style.color = "#5f0080";
         currentParent.style.fontWeight = "700";
 
-        const inner_menu = value.querySelector('.inner_menu');
-        let all_icon = inner_menu.querySelector('img');
         all_icon.setAttribute('src', '/images/icons/icon_veggies_active_pc@2x.1586324570.png');
     }))
 
 
     gnb_menu_lists.map(value => value.addEventListener("mouseout", () => {
-        value.classList.remove("current");
         const currentInfo = value.querySelector(".sub_menu");
         const currentParent = value.querySelector(".inner_menu");
-
-
         const inner_menu = value.querySelector('.inner_menu');
         let all_icon = inner_menu.querySelector('img');
-        all_icon.setAttribute('src', '/images/icons/icon_veggies_inactive_pc@2x.1586324570.png');
 
         currentInfo.style.display = "none";
         currentParent.style.color = "black";
         currentParent.style.fontWeight = "400";
-    }))
 
+        all_icon.setAttribute('src', '/images/icons/icon_veggies_inactive_pc@2x.1586324570.png');
+    }))
+    // ----------------------------------------------------------------------------------
 
     return (
         <>

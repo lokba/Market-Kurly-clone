@@ -1,10 +1,22 @@
-import React from 'react';
+import React, { useRef } from 'react';
 import { SideMenuBox } from './styles';
 
 const SideMenu = () => {
+    const sideMenu = useRef();
+
+    window.addEventListener('scroll', function (e) {
+        if (window.pageYOffset > 674) {
+            sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
+        }
+        else {
+            sideMenu.current.style.top = `${674}px`;
+        }
+    });
+
+
     return (
         <>
-            <SideMenuBox>
+            <SideMenuBox ref={sideMenu}>
                 <div className="side_menu_img">
                     <img alt="" src="/images/icons/side_btn.png" />
                 </div>
