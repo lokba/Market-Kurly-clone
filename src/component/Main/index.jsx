@@ -30,7 +30,6 @@ const Main =
         homeBannerImgs,
         homeSectionTitles,
     }) => {
-
         return (
             <MainBox>
                 <HeaderContainer />

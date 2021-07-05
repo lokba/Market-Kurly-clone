@@ -20,7 +20,6 @@ const HomeMdSection = ({ items, lists, title }) => {
                     }
                 </ul>
             </div>
-
             <HomeFourItems title="" items={items} />
             <div className="btn">
                 <button>과일 · 견과 · 쌀 전체보기 &gt;</button>

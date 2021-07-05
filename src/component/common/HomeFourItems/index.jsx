@@ -21,7 +21,6 @@ const HomeFourItems = ({ title, items, subTitle }) => {
                     <div className="sub">{subTitle}</div>
                 )
             }
-
             <div className="items_list">
                 <div className="item">
                     <img alt="" src={items[0].imgURL} />

@@ -9,7 +9,6 @@ import { NewBox } from './styles';
 
 const New = ({ items, title }) => {
 
-
     return (
         <NewBox>
             <HeaderContainer />
