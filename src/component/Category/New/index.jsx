@@ -12,7 +12,7 @@ const New = ({ items, title }) => {
     return (
         <NewBox>
             <HeaderContainer />
-            <SideMenu />
+            <SideMenu sub />
             <GoodListsHeader title={title} />
             <GoodListsContent items={items} />
             <Pagination />

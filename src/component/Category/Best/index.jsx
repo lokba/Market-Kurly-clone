@@ -12,7 +12,7 @@ const Best = ({ items, title }) => {
     return (
         <BestBox>
             <HeaderContainer />
-            <SideMenu />
+            <SideMenu sub />
             <GoodListsHeader title={title} />
             <GoodListsContent items={items} />
             <Pagination />

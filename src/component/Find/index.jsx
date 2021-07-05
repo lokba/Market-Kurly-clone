@@ -9,7 +9,7 @@ const Find = ({ param }) => {
     return (
         <FindBox>
             <HeaderContainer />
-            <SideMenu />
+            <SideMenu find />
             <section className="findForm">
                 <div className="find_tit">
                     {param === "find_id" ? "아이디 찾기" : "비밀번호 찾기"}

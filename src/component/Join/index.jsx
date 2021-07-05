@@ -8,7 +8,7 @@ const Join = () => {
     return (
         <JoinBox>
             <HeaderContainer />
-            <SideMenu />
+            <SideMenu sub />
             <section className="registerForm">
                 <div className="register_tit">회원가입</div>
                 <div className="necessary"><span className="must_input">*</span>필수입력사항</div>

@@ -1,7 +1,22 @@
 import React, { useEffect, useState } from 'react';
 import { HeaderBox, NavBox } from './styles';
 
-const Header = ({ lists, urlProp }) => {
+const Header = ({
+    lists,
+    urlProp,
+    onLocateOver,
+    onLocateOut,
+    onCartOver,
+    onCartOut,
+    onAllOver,
+    onAllOut,
+    onMenuInfoOver,
+    onMenuInfoOut,
+    onCategoryInfoOver,
+    onCategoryInfoOut,
+    onIcon,
+}) => {
+    const { onLocate, onCart, onAll } = onIcon;
 
     useEffect(() => {
         if (urlProp) {
@@ -10,90 +25,7 @@ const Header = ({ lists, urlProp }) => {
         }
     }, [urlProp]);
 
-    const [onIcon, setOnIcon] = useState({
-        onLocate: false,
-        onCart: false,
-        onAll: false,
-    });
 
-    const onLocateOver = () => {
-        setOnIcon({
-            onLocate: true
-        });
-
-        const location_subinfo = document.querySelector(".location_subinfo");
-        location_subinfo.style.display = "block";
-    }
-    const onLocateOut = () => {
-        setOnIcon({
-            onLocate: false
-        });
-        const location_subinfo = document.querySelector(".location_subinfo");
-        location_subinfo.style.display = "none";
-    }
-
-    const onCartOver = () => {
-        setOnIcon({
-            onCart: true
-        });
-    };
-
-    const onCartOut = () => {
-        setOnIcon({
-            onCart: false
-        });
-
-    };
-
-    const onAllOver = () => {
-        setOnIcon({
-            onAll: true
-        });
-
-        let gnb_menu = document.querySelector(".gnb_menu");
-        let category_tit = document.querySelector(".category_tit");
-
-        gnb_menu.style.display = "block";
-        category_tit.style.color = "#5f0080";
-        category_tit.style.fontWeight = "700";
-    };
-
-    const onAllOut = () => {
-        setOnIcon({
-            onAll: false
-        });
-        let gnb_menu = document.querySelector(".gnb_menu");
-        let category_tit = document.querySelector(".category_tit");
-
-        gnb_menu.style.display = "none";
-        category_tit.style.color = "black";
-        category_tit.style.fontWeight = "400";
-
-    };
-
-
-    const onMenuInfoOver = () => {
-        let subinfo = document.querySelector(".subinfo");
-        subinfo.style.display = "block";
-    }
-
-    const onMenuInfoOut = () => {
-        let subinfo = document.querySelector(".subinfo");
-        subinfo.style.display = "none";
-    }
-
-    const onCategoryInfoOver = () => {
-        let gnb_menu = document.querySelector(".gnb_menu");
-        gnb_menu.style.width = "440px";
-
-    }
-    const onCategoryInfoOut = () => {
-        let gnb_menu = document.querySelector(".gnb_menu");
-        gnb_menu.style.width = "219px";
-    }
-
-
-    // ----------------------------------------------------------------------------------
     let gnb_menu_list = document.querySelectorAll(".gnb_menu_list");
     const gnb_menu_lists = Array.from(gnb_menu_list);
 
@@ -110,7 +42,6 @@ const Header = ({ lists, urlProp }) => {
         all_icon.setAttribute('src', '/images/icons/icon_veggies_active_pc@2x.1586324570.png');
     }))
 
-
     gnb_menu_lists.map(value => value.addEventListener("mouseout", () => {
         const currentInfo = value.querySelector(".sub_menu");
         const currentParent = value.querySelector(".inner_menu");
@@ -123,7 +54,6 @@ const Header = ({ lists, urlProp }) => {
 
         all_icon.setAttribute('src', '/images/icons/icon_veggies_inactive_pc@2x.1586324570.png');
     }))
-    // ----------------------------------------------------------------------------------
 
     return (
         <>
@@ -166,7 +96,7 @@ const Header = ({ lists, urlProp }) => {
                 <div id="category" onMouseOver={onAllOver} onMouseOut={onAllOut}>
                     <div className="category_info" >
                         {
-                            onIcon.onAll ?
+                            onAll ?
                                 (<img alt="" id="location_img" src="/images/icons/ico_gnb_all_checked.png" />)
                                 :
                                 (<img alt="" id="location_img" src="/images/icons/ico_all.png" />)
@@ -217,7 +147,7 @@ const Header = ({ lists, urlProp }) => {
                 </div>
                 <div id="location" onMouseOver={onLocateOver} onMouseOut={onLocateOut}>
                     {
-                        onIcon.onLocate ?
+                        onLocate ?
                             (<img alt="" id="location_img" src="/images/icons/ico_delivery_setting_checked.svg" />)
                             :
                             (<img alt="" id="location_img" src="/images/icons/ico_location.svg" />)
@@ -238,7 +168,7 @@ const Header = ({ lists, urlProp }) => {
                 </div>
                 <a href="/shop/goods/goods_cart" id="cart" onMouseOver={onCartOver} onMouseOut={onCartOut}>
                     {
-                        onIcon.onCart ?
+                        onCart ?
                             (<img alt="" id="location_img" src="/images/icons/ico_cart_checked.svg" />)
                             :
                             (<img alt="" id="cart_img" src="/images/icons/ico_cart.svg" />)

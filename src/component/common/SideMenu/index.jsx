@@ -1,22 +1,24 @@
 import React, { useRef } from 'react';
 import { SideMenuBox } from './styles';
 
-const SideMenu = () => {
+const SideMenu = (props) => {
     const sideMenu = useRef();
+    const offset = props.sub ? 230 : 674;
 
-    window.addEventListener('scroll', function (e) {
-        if (window.pageYOffset > 674) {
-            sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
-        }
-        else {
-            sideMenu.current.style.top = `${674}px`;
-        }
-    });
-
+    if (!props.find) {
+        window.addEventListener('scroll', function (e) {
+            if (window.pageYOffset > `${offset}`) {
+                sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
+            }
+            else {
+                sideMenu.current.style.top = `${offset}px`;
+            }
+        });
+    };
 
     return (
         <>
-            <SideMenuBox ref={sideMenu}>
+            <SideMenuBox ref={sideMenu} {...props}>
                 <div className="side_menu_img">
                     <img alt="" src="/images/icons/side_btn.png" />
                 </div>

@@ -33,7 +33,7 @@ export const HomeSaleBox = styled.div`
         transform: scale(1.02);
         transition: transform 500ms cubic-bezier(0.165, 0.84, 0.44, 1) 0ms;
     }
-    .title{
+    .item_title{
         line-height:28px;
         cursor:pointer;
         font-size:18px;

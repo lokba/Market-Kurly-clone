@@ -12,7 +12,7 @@ const Sale = ({ title, items }) => {
     return (
         <SaleBox>
             <HeaderContainer />
-            <SideMenu />
+            <SideMenu sub />
             <MainBnr>
                 <MainBnrLink>
                     <img alt="" src="/images/goods/cheap/banner.png" />

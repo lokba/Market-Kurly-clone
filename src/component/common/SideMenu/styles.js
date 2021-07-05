@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled, { css } from "styled-components";
 
 export const SideMenuBox = styled.div`
     position:absolute;
@@ -9,6 +9,17 @@ export const SideMenuBox = styled.div`
     font-size:12px;
     transition: top 0.2s;
 
+    ${props => props.sub &&
+        css`
+            top:230px;
+        `
+    }
+    
+    ${props => props.find &&
+        css`
+            top:230px;
+        `
+    }
 
     .side_menu_img{
         padding-bottom:7px;
