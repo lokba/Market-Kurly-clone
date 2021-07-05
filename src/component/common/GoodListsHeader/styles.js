@@ -56,6 +56,11 @@ export const GoodListsHeaderBox = styled.div`
         padding-top:1px;
         cursor: pointer;
     }
+
+    .ctrl_tit_on{
+        color:#5f0080;
+    }
+    
     .ctrl_on{
         color:#5f0080;
     }
@@ -67,12 +72,8 @@ export const GoodListsHeaderBox = styled.div`
         display: flex;
     }
 
-    .ctrl_off{
-        display:none;
-    }
-
     .category_box{
-        display:none;
+        /* display:none; */
         width:98px;
         height:264px;
         position:absolute;
@@ -81,6 +82,13 @@ export const GoodListsHeaderBox = styled.div`
         right:-12px;
         background-color: #fff;
         box-shadow: 0 2px 4px rgb(0 0 0 / 30%);
+    }
+
+    .onView{
+        display:block;
+    }
+    .offView{
+        display:none;
     }
 
     .ctrl_category{
