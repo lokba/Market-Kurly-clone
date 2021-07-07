@@ -15,7 +15,10 @@ const HomeMdSection = ({ items, lists, title }) => {
                     {
                         lists.map((list, index) =>
                             <li key={index}>
-                                <a className={click === index ? "menu menu_on" : "menu"} onClick={(e) => { e.target.classList.add("menu_on"); setClick(index); }} >{list}</a>
+                                <a href="/" className={click === index ? "menu menu_on" : "menu"}
+                                    onClick={(e) => { e.target.classList.add("menu_on"); setClick(index); }} >
+                                    {list}
+                                </a>
                             </li>
                         )
                     }

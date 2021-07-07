@@ -144,7 +144,7 @@ export const NavBox = styled.div`
         width:168px;
         height:55px;
     }
-    
+
     /* 변경사항------------------------------ */
     .category_info>img{
         width:16px;
