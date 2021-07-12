@@ -6,5 +6,5 @@ const SalePage = () => {
         <SaleContainer />
     );
 };
-
+//
 export default SalePage;
