@@ -296,10 +296,6 @@ const MainContainer = () => {
         },
     ];
 
-    const rotateImgs = [
-        "/images/banner/banner2.png",
-    ];
-
     const md_lists = [
         "채소", "과일 · 견과 · 쌀", "수산 · 해산 · 건어물", "정육 · 계란", "국 · 반찬 · 메인요리",
         "샐러드 · 간편식", "면 · 양념 · 오일", "생수 · 음료 · 우유 · 커피", "간식 · 과자 · 떡",
@@ -350,6 +346,25 @@ const MainContainer = () => {
             title: "인스타그램 고객 후기",
         },
     ];
+
+    const rotateImgs = [
+        {
+            imageURL: "/images/banner/banner4.png",
+        },
+        {
+            imageURL: "/images/banner/banner5.png",
+        },
+        {
+            imageURL: "/images/banner/banner2.png",
+        },
+        {
+            imageURL: "/images/banner/banner3.png",
+        },
+        {
+            imageURL: "/images/banner/banner1.png",
+        },
+    ];
+
 
     return (
         <Main

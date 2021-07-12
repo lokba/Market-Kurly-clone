@@ -16,23 +16,7 @@ const Item = ({ item }) => {
 };
 
 const HomeRotateBannerSection = ({ rotateImgs }) => {
-    let items = [
-        {
-            imageURL: `${rotateImgs}`
-        },
-        {
-            imageURL: `${rotateImgs}`
-        },
-        {
-            imageURL: `${rotateImgs}`
-        },
-        {
-            imageURL: `${rotateImgs}`
-        },
-        {
-            imageURL: `${rotateImgs}`
-        }
-    ];
+
 
     return (
         <Container>
@@ -42,7 +26,7 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
                 timeout={400}
                 indicators={false}
             >
-                {items.map((item, index) => (
+                {rotateImgs.map((item, index) => (
                     <Item key={index} item={item} />
                 ))}
             </Carousel>
