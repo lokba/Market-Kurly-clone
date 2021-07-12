@@ -3,8 +3,7 @@ import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
 import { LoginBox } from './styles';
 
-const Login = ({ onChange, loginInfo }) => {
-    const { id, password } = loginInfo;
+const Login = () => {
     return (
         <LoginBox>
             <HeaderContainer />
@@ -12,8 +11,8 @@ const Login = ({ onChange, loginInfo }) => {
                 <div className="login_tit">로그인</div>
                 <div className="form_box">
                     <form className="write_form">
-                        <input onChange={onChange} value={id} name="id" placeholder="아이디를 입력해주세요" />
-                        <input onChange={onChange} value={password} name="password" placeholder="비밀번호를 입력해주세요" />
+                        <input placeholder="아이디를 입력해주세요" />
+                        <input placeholder="비밀번호를 입력해주세요" />
                         <div className="login_subInfo">
                             <div className="checkbox_save">
                                 <div className="clickBox">
