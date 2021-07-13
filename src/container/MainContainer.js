@@ -297,7 +297,21 @@ const MainContainer = () => {
     ];
 
     const rotateImgs = [
-        "/images/banner/banner2.png",
+        {
+            imgURL: "/images/banner/banner5.png",
+        },
+        {
+            imgURL: "/images/banner/banner2.png",
+        },
+        {
+            imgURL: "/images/banner/banner3.png",
+        },
+        {
+            imgURL: "/images/banner/banner4.png",
+        },
+        {
+            imgURL: "/images/banner/banner1.png",
+        },
     ];
 
     const md_lists = [
