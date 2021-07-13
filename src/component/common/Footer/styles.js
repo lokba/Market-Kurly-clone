@@ -1,7 +1,6 @@
 import styled from "styled-components";
 
 export const FooterBox = styled.div`
-    
     .type{
         padding-top:29px;
         padding-bottom:20px;

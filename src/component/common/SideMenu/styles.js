@@ -3,7 +3,7 @@ import styled, { css } from "styled-components";
 export const SideMenuBox = styled.div`
     position:absolute;
     right:20px;
-    z-index:1;
+    z-index:10;
     width:80px;
     top:674px;
     font-size:12px;

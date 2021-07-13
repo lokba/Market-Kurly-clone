@@ -9,6 +9,7 @@ import LoginPage from './pages/LoginPage';
 import MainPage from './pages/MainPage';
 import NewPage from './pages/NewPage';
 import SalePage from './pages/SalePage';
+import SearchPage from './pages/SearchPage';
 
 function App() {
   return (
@@ -23,6 +24,7 @@ function App() {
       <Route component={LoginPage} path="/shop/member/login" exact />
       <Route component={FindPage} path="/shop/member/login/:find" exact />
       <Route component={CartPage} path="/shop/goods/goods_cart" exact />
+      <Route component={SearchPage} path="/shop/goods/goods_search" exact />
     </>
   );
 }
