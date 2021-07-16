@@ -6,3 +6,5 @@
 
 3 주차(7.06 ~ 7.12) : develop market-kurly clone using lifecycle and routing.
 
+4 주차(7.13 ~ 7.19) : develop market-kurly clone using redux.
+
