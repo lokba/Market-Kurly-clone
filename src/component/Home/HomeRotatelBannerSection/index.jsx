@@ -48,12 +48,12 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
 
     let interval = setInterval(() => {
         onMoveNext();
-    }, 3000);
+    }, 4000);
 
     const imgBoxMouseOver = () => {
         clearInterval(interval);
 
-        const ctrl_btn = document.querySelectorAll(".btn");
+        const ctrl_btn = document.querySelectorAll(".bnr_btn");
         const ctrlBtn = Array.from(ctrl_btn);
 
         for (let btn of ctrlBtn) {
@@ -64,9 +64,9 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
     const imgBoxMouseOut = () => {
         interval = setInterval(() => {
             onMoveNext()
-        }, 3000);
+        }, 4000);
 
-        const ctrl_btn = document.querySelectorAll(".btn");
+        const ctrl_btn = document.querySelectorAll(".bnr_btn");
         const ctrlBtn = Array.from(ctrl_btn);
 
         for (let btn of ctrlBtn) {
@@ -85,9 +85,9 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
                         </div>
                     ))
                 }
-                <div className="ctrl_btn">
-                    <div className="btn prev" onClick={onMovePrev}>	&#60;</div>
-                    <div className="btn next" onClick={onMoveNext}>	&#62;</div>
+                <div className="bnr_ctrl_btn">
+                    <div className="bnr_btn prev" onClick={onMovePrev}>	&#60;</div>
+                    <div className="bnr_btn next" onClick={onMoveNext}>	&#62;</div>
                 </div>
             </div>
         </HomeRotateBannerBox >

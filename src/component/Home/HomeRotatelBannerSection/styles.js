@@ -32,12 +32,12 @@ export const HomeRotateBannerBox = styled.div`
 		}
 	}
 
-	.ctrl_btn{
+	.bnr_ctrl_btn{
 		display:flex;
 		position:absolute;
 		top:43%;
 
-		.btn{
+		.bnr_btn{
 			z-index:100;
 			border-radius:50%;
 			width:60px;

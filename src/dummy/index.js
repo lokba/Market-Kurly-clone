@@ -36,7 +36,72 @@ export const mainItems1 = [
             before_price: "",
             imgURL: "/images/goods/how_about_this/meat.jpeg",
             sticker: false,
+        },
+        {
+            item_title: "[하림] 버팔로 치킨 봉 스파이시",
+            rate: "25%",
+            after_price: "8,250원",
+            before_price: "11,000원",
+            imgURL: "/images/goods/miss_regret_price/chicken.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[아침엔] 베이글 2종",
+            rate: "30%",
+            after_price: "4,130원",
+            before_price: "5,900원",
+            imgURL: "/images/goods/miss_regret_price/bagel.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[엔쿡] 무항생제 어린이 한우 사골 곰국 ",
+            rate: "15%",
+            after_price: "13,515원",
+            before_price: "15,900원",
+            imgURL: "/images/goods/miss_regret_price/sagol.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[LOTS OF LOVE] 차돌듬뿍 묵은지 볶음밥",
+            rate: "20%",
+            after_price: "6,240원",
+            before_price: "7,800원",
+            imgURL: "/images/goods/miss_regret_price/rice.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "미국산 워싱턴 생체리 500g 10개",
+            rate: "10%",
+            after_price: "13,410원",
+            before_price: "14,900원",
+            imgURL: "/images/goods/md_recommend/cherry.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "국산 블루베리 100g(특)",
+            rate: "",
+            after_price: "7,990원",
+            before_price: "",
+            imgURL: "/images/goods/md_recommend/blueberry.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "신비 복숭아 700g 5~6입 (특)",
+            rate: "",
+            after_price: "16,900원",
+            before_price: "",
+            imgURL: "/images/goods/md_recommend/apple.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "실속 성주 참외 1.5kg",
+            rate: "15%",
+            after_price: "12,665원",
+            before_price: "14,900원",
+            imgURL: "/images/goods/md_recommend/melon.jpeg",
+            sticker: false,
         }
+
     ]
 ];
 
