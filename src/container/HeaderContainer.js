@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { withRouter } from 'react-router';
 import Header from '../component/common/Header/index';
 
-const HeaderContainer = ({ match }) => {
+const HeaderContainer = ({ match, history }) => {
     const gnu_menu_lists = [
         {
             menu_txt: "채소",
@@ -343,6 +343,17 @@ const HeaderContainer = ({ match }) => {
         urlProp = "event";
     }
 
+    const [inputValue, setInputValue] = useState(null);
+
+    const onKeyPress = (e) => {
+        if (e.key === 'Enter') {
+            history.push('/shop/goods/goods_search');
+            window.location.reload();
+        }
+        console.log(inputValue);
+    }
+
+
     return (
         <Header
             lists={gnu_menu_lists}
@@ -358,6 +369,9 @@ const HeaderContainer = ({ match }) => {
             onCategoryInfoOver={onCategoryInfoOver}
             onCategoryInfoOut={onCategoryInfoOut}
             onIcon={onIcon}
+            onKeyPress={onKeyPress}
+            setInputValue={setInputValue}
+            inputValue={inputValue}
         />
     );
 };

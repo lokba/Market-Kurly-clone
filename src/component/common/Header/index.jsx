@@ -15,6 +15,9 @@ const Header = ({
     onCategoryInfoOver,
     onCategoryInfoOut,
     onIcon,
+    onKeyPress,
+    setInputValue,
+    inputValue,
 }) => {
     const { onLocate, onCart, onAll } = onIcon;
 
@@ -142,8 +145,12 @@ const Header = ({
                     <li id="event" className="menu">특가/혜택</li>
                 </a>
                 <div id="search">
-                    <input />
-                    <img alt="" src="/images/icons/ico_search.png" />
+                    <input
+                        value={inputValue}
+                        onChange={(e) => setInputValue(e.target.value)}
+                        onKeyPress={onKeyPress}
+                    />
+                    < img alt="" src="/images/icons/ico_search.png" />
                 </div>
                 <div id="location" onMouseOver={onLocateOver} onMouseOut={onLocateOut}>
                     {
