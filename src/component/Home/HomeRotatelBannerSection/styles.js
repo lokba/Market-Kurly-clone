@@ -50,10 +50,7 @@ export const HomeRotateBannerBox = styled.div`
 			font-size:40px;
 			font-weight:600;
 			color:white;
-
-			&:hover{
-				opacity:0.6;
-			}
+			transition : opacity 0.4s;
 		}
 
 		.prev{

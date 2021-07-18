@@ -52,12 +52,26 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
 
     const imgBoxMouseOver = () => {
         clearInterval(interval);
+
+        const ctrl_btn = document.querySelectorAll(".btn");
+        const ctrlBtn = Array.from(ctrl_btn);
+
+        for (let btn of ctrlBtn) {
+            btn.style.opacity = "0.6";
+        }
     };
 
     const imgBoxMouseOut = () => {
         interval = setInterval(() => {
             onMoveNext()
         }, 3000);
+
+        const ctrl_btn = document.querySelectorAll(".btn");
+        const ctrlBtn = Array.from(ctrl_btn);
+
+        for (let btn of ctrlBtn) {
+            btn.style.opacity = "0.2";
+        }
     };
 
 
