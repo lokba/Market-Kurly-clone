@@ -19,12 +19,12 @@ export const HomeFourItemsBox = styled.div`
         .itemBox{
             display:flex;
             width:2000px;
-            transition: transform 1s;
+            transition: transform 0.5s;
         }
 
         .item_ctrl_btn{
             display:flex;
-            
+
             .item_btn{
                 z-index:100;
                 border-radius:50%;
