@@ -1,7 +1,8 @@
 import React from 'react';
 import { HomeKurlyRecipeBox } from './styles';
 
-const HomeKurlyRecipeSection = ({ title, items }) => {
+const HomeKurlyRecipeSection = ({ info, items }) => {
+    const { title } = info;
     return (
         <>
             <HomeKurlyRecipeBox>

@@ -1,43 +1,24 @@
-import React from 'react';
+import React, { useEffect } from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
 import Event from '../component/Category/Event/index';
+import { eventItems } from '../dummy/index';
+import { getEventData } from '../modules/eventCatData';
 
 const EventContainer = () => {
-    const events = [
-        {
-            imgURL: "/images/banner/special_banner1.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner2.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner3.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner4.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner5.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner6.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner7.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner8.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner9.png",
-        },
-        {
-            imgURL: "/images/banner/special_banner10.png",
-        },
-    ];
+    const dispatch = useDispatch();
+    const { items } = useSelector(({ eventCatData }) => ({
+        items: eventCatData.getEventData,
+    }));
 
+    useEffect(() => {
+        dispatch(getEventData(eventItems));
+    }, [dispatch]);
 
     return (
-        <Event events={events} />
+        <>
+            {items && <Event events={items} />}
+        </>
     );
 };
 

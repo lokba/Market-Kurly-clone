@@ -1,7 +1,9 @@
 import React from 'react';
 import { HomeSaleBox } from './styles';
 
-const HomeSaleSection = ({ title, items }) => {
+const HomeSaleSection = ({ info, items }) => {
+    const { title } = info;
+
     return (
         <>
             <HomeSaleBox>

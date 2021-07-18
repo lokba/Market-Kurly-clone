@@ -2,9 +2,10 @@ import HomeFourItems from '../../common/HomeFourItems/index';
 import React, { useState } from 'react';
 import { HomeMdBox } from './styles';
 
-const HomeMdSection = ({ items, lists, title }) => {
+const HomeMdSection = ({ items, lists, info }) => {
     const [click, setClick] = useState(0);
 
+    const { title } = info;
     return (
         <HomeMdBox>
             <div className="title">

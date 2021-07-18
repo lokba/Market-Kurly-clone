@@ -4,7 +4,9 @@ import { HomeFourItemsBox } from './styles';
 
 
 // subTitle에 대한 css 수정 필요
-const HomeFourItems = ({ title, items, subTitle }) => {
+const HomeFourItems = ({ items, info }) => {
+    const { title, subTitle } = { ...info };
+
     return (
         <HomeFourItemsBox>
             {

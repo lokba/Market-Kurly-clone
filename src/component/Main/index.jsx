@@ -28,25 +28,24 @@ const Main =
         md_lists,
         bannerInfo,
         homeBannerImgs,
-        homeSectionTitles,
     }) => {
         return (
             <MainBox>
                 <HeaderContainer />
                 <HomeRotateBannerSection rotateImgs={rotateImgs} />
                 <SideMenu />
-                <HomeFourItems title={homeSectionTitles[0].title} items={items1} />
-                <HomeSaleSection title={homeSectionTitles[1].title} items={items2} />
-                <HomeFourItems title={homeSectionTitles[2].title} items={items3} />
+                <HomeFourItems info={items1[0]} items={items1[1]} />
+                <HomeSaleSection info={items2[0]} items={items2[1]} />
+                <HomeFourItems info={items3[0]} items={items3[1]} />
                 <HomeBannerSection imgURL={homeBannerImgs[0]} />
-                <HomeMdSection title={homeSectionTitles[3].title} items={items4} lists={md_lists} />
+                <HomeMdSection info={items4[0]} items={items4[1]} lists={md_lists} />
                 <HomeTxtBannerSection bannerInfo={bannerInfo} />
-                <HomeFourItems title={homeSectionTitles[4].title} items={items5} />
-                <HomeFourItems title={homeSectionTitles[5].title} items={items6} />
-                <HomeFourItems title={homeSectionTitles[6].title} subTitle={homeSectionTitles[6].subTitle} items={items7} />
-                <HomeFourItems title={homeSectionTitles[7].title} subTitle={homeSectionTitles[7].subTitle} items={items8} />
-                <HomeKurlyRecipeSection title={homeSectionTitles[8].title} items={items9} />
-                <HomeInstaReviewSection title={homeSectionTitles[9].title} items={items10} />
+                <HomeFourItems info={items5[0]} items={items5[1]} />
+                <HomeFourItems info={items6[0]} items={items6[1]} />
+                <HomeFourItems info={items7[0]} items={items7[1]} />
+                <HomeFourItems info={items8[0]} items={items8[1]} />
+                <HomeKurlyRecipeSection info={items9[0]} items={items9[1]} />
+                <HomeInstaReviewSection info={items10[0]} items={items10[1]} />
                 <HomeBannerSection foot imgURL={homeBannerImgs[1]} />
                 <Footer />
             </MainBox>

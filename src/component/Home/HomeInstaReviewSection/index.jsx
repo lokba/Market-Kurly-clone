@@ -1,7 +1,9 @@
 import React from 'react';
 import { HomeInstaReviewBox } from './styles';
 
-const HomeInstaReviewSection = ({ title, items }) => {
+const HomeInstaReviewSection = ({ info, items }) => {
+    const { title } = info;
+
     return (
         <>
             <HomeInstaReviewBox>

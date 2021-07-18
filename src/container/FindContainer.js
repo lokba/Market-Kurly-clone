@@ -20,8 +20,6 @@ const FindContainer = ({ match }) => {
         })
     }
 
-    console.log("findInfo", findInfo);
-
     return (
         <Find
             param={find_param}
