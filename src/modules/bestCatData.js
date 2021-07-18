@@ -16,7 +16,7 @@ const bestCatData = handleActions(
             getBestData,
         }),
     },
-    initialState
+    initialState,
 );
 
 
