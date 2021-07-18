@@ -1,10 +1,9 @@
 import React, { useState } from 'react';
 import { withRouter } from 'react-router';
 import Header from '../component/common/Header/index';
-import { gnu_menu_lists } from '../constants/index';
+import { gnu_menu_lists } from '../dummy/index';
 
 const HeaderContainer = ({ match, history }) => {
-
     const [onIcon, setOnIcon] = useState({
         onLocate: false,
         onCart: false,
@@ -15,10 +14,10 @@ const HeaderContainer = ({ match, history }) => {
         setOnIcon({
             onLocate: true
         });
-
         const location_subinfo = document.querySelector(".location_subinfo");
         location_subinfo.style.display = "block";
     }
+
     const onLocateOut = () => {
         setOnIcon({
             onLocate: false
@@ -65,7 +64,6 @@ const HeaderContainer = ({ match, history }) => {
         category_tit.style.fontWeight = "400";
 
     };
-
 
     const onMenuInfoOver = () => {
         let subinfo = document.querySelector(".subinfo");
