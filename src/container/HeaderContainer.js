@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import { withRouter } from 'react-router';
 import Header from '../component/common/Header/index';
 import { gnu_menu_lists } from '../dummy/index';
@@ -113,7 +113,7 @@ const HeaderContainer = ({ match, history }) => {
 
 
     return (
-        <Header
+        < Header
             lists={gnu_menu_lists}
             urlProp={urlProp}
             onLocateOver={onLocateOver}
@@ -132,6 +132,7 @@ const HeaderContainer = ({ match, history }) => {
             inputValue={inputValue}
         />
     );
+
 };
 
 export default withRouter(HeaderContainer);
