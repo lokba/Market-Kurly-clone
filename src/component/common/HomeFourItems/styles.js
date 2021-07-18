@@ -9,7 +9,6 @@ export const HomeFourItemsBox = styled.div`
     }
     
     .items_list{
-
         width:1050px;
         margin:0 auto;
         margin-top:35px;
@@ -20,38 +19,43 @@ export const HomeFourItemsBox = styled.div`
         .itemBox{
             display:flex;
             width:2000px;
+            transition: transform 1s;
         }
 
         .item_ctrl_btn{
             display:flex;
-            position:absolute;
-            top:26%;
-
+            
             .item_btn{
-                z-index:700;
+                z-index:100;
                 border-radius:50%;
-                width:60px;
-                height:60px;
+                width:50px;
+                height:50px;
                 background: white;
-                opacity:1;
                 display:flex;
                 justify-content: center;
                 align-items: center;
-                font-size:40px;
+                font-size:30px;
                 font-weight:400;
                 color:gray;
-                transition : opacity 0.4s;
+                cursor:pointer;
             }
 
             .prev{
-                margin-right:930px;
+                position:absolute;
+                top:26%;
+                left:0;
+                margin-left:5px;
                 padding-top:6px;
                 padding-right:4px;
             }
 
             .next{
+                position:absolute;
+                top:26%;
+                right:0.5%;
                 padding-top:6px;
                 padding-left:4px;
+                
             }
         }
     }
