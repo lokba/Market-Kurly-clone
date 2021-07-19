@@ -1,4 +1,5 @@
 import React from 'react';
+import Modal from '../Modal/index';
 import Sticker from '../Sticker/index';
 import { GoodListsContentBox } from './styles';
 
@@ -31,6 +32,7 @@ const GoodListsContent = ({ items }) => {
                     )
                     )
                 }
+                <Modal />
             </GoodListsContentBox>
         </>
     );
