@@ -36,7 +36,72 @@ export const mainItems1 = [
             before_price: "",
             imgURL: "/images/goods/how_about_this/meat.jpeg",
             sticker: false,
+        },
+        {
+            item_title: "[하림] 버팔로 치킨 봉 스파이시",
+            rate: "25%",
+            after_price: "8,250원",
+            before_price: "11,000원",
+            imgURL: "/images/goods/miss_regret_price/chicken.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[아침엔] 베이글 2종",
+            rate: "30%",
+            after_price: "4,130원",
+            before_price: "5,900원",
+            imgURL: "/images/goods/miss_regret_price/bagel.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[엔쿡] 무항생제 어린이 한우 사골 곰국 ",
+            rate: "15%",
+            after_price: "13,515원",
+            before_price: "15,900원",
+            imgURL: "/images/goods/miss_regret_price/sagol.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[LOTS OF LOVE] 차돌듬뿍 묵은지 볶음밥",
+            rate: "20%",
+            after_price: "6,240원",
+            before_price: "7,800원",
+            imgURL: "/images/goods/miss_regret_price/rice.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "미국산 워싱턴 생체리 500g 10개",
+            rate: "10%",
+            after_price: "13,410원",
+            before_price: "14,900원",
+            imgURL: "/images/goods/md_recommend/cherry.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "국산 블루베리 100g(특)",
+            rate: "",
+            after_price: "7,990원",
+            before_price: "",
+            imgURL: "/images/goods/md_recommend/blueberry.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "신비 복숭아 700g 5~6입 (특)",
+            rate: "",
+            after_price: "16,900원",
+            before_price: "",
+            imgURL: "/images/goods/md_recommend/apple.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "실속 성주 참외 1.5kg",
+            rate: "15%",
+            after_price: "12,665원",
+            before_price: "14,900원",
+            imgURL: "/images/goods/md_recommend/melon.jpeg",
+            sticker: false,
         }
+
     ]
 ];
 
@@ -101,7 +166,23 @@ export const mainItems3 = [
             before_price: "7,800원",
             imgURL: "/images/goods/miss_regret_price/rice.jpeg",
             sticker: false,
-        }
+        },
+        {
+            item_title: "신비 복숭아 700g 5~6입 (특)",
+            rate: "",
+            after_price: "16,900원",
+            before_price: "",
+            imgURL: "/images/goods/md_recommend/apple.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "실속 성주 참외 1.5kg",
+            rate: "15%",
+            after_price: "12,665원",
+            before_price: "14,900원",
+            imgURL: "/images/goods/md_recommend/melon.jpeg",
+            sticker: false,
+        },
     ]
 ];
 
@@ -142,7 +223,23 @@ export const mainItems4 = [
             before_price: "14,900원",
             imgURL: "/images/goods/md_recommend/melon.jpeg",
             sticker: false,
-        }
+        },
+        {
+            item_title: "[엔쿡] 무항생제 어린이 한우 사골 곰국 ",
+            rate: "15%",
+            after_price: "13,515원",
+            before_price: "15,900원",
+            imgURL: "/images/goods/miss_regret_price/sagol.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[LOTS OF LOVE] 차돌듬뿍 묵은지 볶음밥",
+            rate: "20%",
+            after_price: "6,240원",
+            before_price: "7,800원",
+            imgURL: "/images/goods/miss_regret_price/rice.jpeg",
+            sticker: false,
+        },
     ]
 
 ];
@@ -183,7 +280,31 @@ export const mainItems5 = [
             before_price: "7,400원",
             imgURL: "/images/goods/most_hot/meat.jpeg",
             sticker: false,
-        }
+        },
+        {
+            item_title: "[제니퍼룸] 제습기 7L JR-DH0001WH",
+            rate: "15%",
+            after_price: "16,9000원",
+            before_price: "199,000원",
+            imgURL: "/images/goods/care_summer/air_clean.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[에비에어] 스마트 휴대용 핸디 선풍기 R5 2종",
+            rate: "33%",
+            after_price: "9,900원",
+            before_price: "14,900원",
+            imgURL: "/images/goods/care_summer/handy_fan.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[생활공작소] 곰팡이 제거제",
+            rate: "25%",
+            after_price: "4,125원",
+            before_price: "5,500원",
+            imgURL: "/images/goods/care_summer/mold_clean.jpeg",
+            sticker: false,
+        },
     ]
 ];
 export const mainItems6 = [
@@ -222,6 +343,14 @@ export const mainItems6 = [
             after_price: "64,800원",
             before_price: "69,800원",
             imgURL: "/images/goods/care_summer/fan.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[더플랜] 꿔바로우 찹쌀 탕수육",
+            rate: "10%",
+            after_price: "6,660원",
+            before_price: "7,400원",
+            imgURL: "/images/goods/most_hot/meat.jpeg",
             sticker: false,
         }
     ]
@@ -263,7 +392,31 @@ export const mainItems7 = [
             before_price: "",
             imgURL: "/images/goods/365_low_price/water.jpeg",
             sticker: false,
-        }
+        },
+        {
+            item_title: "[그린몬스터] 헐리우드 48시간",
+            rate: "25%",
+            after_price: "21,000원",
+            before_price: "28,000원",
+            imgURL: "/images/goods/diet_manage/hollywood.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[저스트 그린] 리코타 하비스트 샐러드 285g",
+            rate: "",
+            after_price: "6,900원",
+            before_price: "",
+            imgURL: "/images/goods/diet_manage/salad.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[Better me] 냉동 닭가슴살 4종",
+            rate: "",
+            after_price: "1,700원",
+            before_price: "",
+            imgURL: "/images/goods/diet_manage/chicken.jpeg",
+            sticker: false,
+        },
     ]
 
 ];
@@ -305,6 +458,22 @@ export const mainItems8 = [
             before_price: "",
             imgURL: "/images/goods/diet_manage/oat.jpeg",
             sticker: false,
+        },
+        {
+            item_title: "[오뗄블랙라벨] 추억의 비엔나 소x시지 800g",
+            rate: "15%",
+            after_price: "5,865원",
+            before_price: "6,900원",
+            imgURL: "/images/goods/365_low_price/sausage.jpeg",
+            sticker: false,
+        },
+        {
+            item_title: "[KF365] 플레인 탄산수 2종",
+            rate: "",
+            after_price: "3,500원",
+            before_price: "",
+            imgURL: "/images/goods/365_low_price/water.jpeg",
+            sticker: false,
         }
     ]
 ];
@@ -327,7 +496,15 @@ export const mainItems9 = [
         {
             item_title: "문어 뽈뽀",
             imgURL: "/images/goods/kurly_recipe/octopus.jpeg",
-        }
+        },
+        {
+            item_title: "단호박 곤약 콩국수",
+            imgURL: "/images/goods/kurly_recipe/danhobak.jpeg",
+        },
+        {
+            item_title: "그릭 복숭아",
+            imgURL: "/images/goods/kurly_recipe/fruit.jpeg",
+        },
     ]
 ];
 
@@ -354,6 +531,12 @@ export const mainItems10 = [
         },
         {
             imgURL: "/images/goods/instagram_review/img6.jpeg"
+        },
+        {
+            imgURL: "/images/goods/instagram_review/img3.jpeg"
+        },
+        {
+            imgURL: "/images/goods/instagram_review/img4.jpeg"
         },
     ]
 ];

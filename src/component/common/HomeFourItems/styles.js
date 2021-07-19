@@ -5,28 +5,67 @@ export const HomeFourItemsBox = styled.div`
         padding:79px 0 0;
         font-size:28px;
         font-weight:700;
-        text-align:center;
+        text-align:center
     }
-
-    .cursor_tit{
-        cursor:pointer;
-    }
+    
     .items_list{
-        display:flex;
-        justify-content: center;
-        margin-left:18px;
+        width:1050px;
+        margin:0 auto;
         margin-top:35px;
-        
+
+        overflow:hidden;
+        position:relative;
+
+        .itemBox{
+            display:flex;
+            width:2000px;
+            transition: transform 0.5s;
+        }
+
+        .item_ctrl_btn{
+            display:flex;
+
+            .item_btn{
+                z-index:100;
+                border-radius:50%;
+                width:50px;
+                height:50px;
+                background: white;
+                display:flex;
+                justify-content: center;
+                align-items: center;
+                font-size:30px;
+                font-weight:400;
+                color:gray;
+                cursor:pointer;
+            }
+
+            .prev{
+                position:absolute;
+                top:27%;
+                left:0;
+                margin-left:5px;
+                padding-top:6px;
+                padding-right:4px;
+            }
+
+            .next{
+                position:absolute;
+                top:27%;
+                right:0.5%;
+                padding-top:6px;
+                padding-left:4px;
+                
+            }
+        }
     }
 
     .item{
         width:249px;
-        /* width:267px; */
         height:506px;
         margin-right:18px;
         font-size:16px;
         position:relative;
-        overflow:hidden;
     }
 
     .item img{
@@ -34,7 +73,6 @@ export const HomeFourItemsBox = styled.div`
         width:249px;
         position:relative;
         cursor: pointer;
-        /* overflow:hidden; */
     }
 
     .item img:hover{

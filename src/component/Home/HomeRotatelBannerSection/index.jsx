@@ -1,36 +1,98 @@
 import React from 'react';
-import Carousel from 'react-material-ui-carousel';
-import { Card, Container } from './styles';
-
-
-const Item = ({ item }) => {
-    return (
-        <Card>
-            <img
-                style={{ width: '100%', height: '100%', objectFit: 'cover' }}
-                src={`${item.imgURL}`}
-                alt="homeBannerImage"
-            />
-        </Card>
-    );
-};
+import { HomeRotateBannerBox } from './styles';
 
 const HomeRotateBannerSection = ({ rotateImgs }) => {
+    let index = 0;
+
+    const onMovePrev = () => {
+        let imgItems = document.querySelectorAll(".imgItem");
+        let items = Array.from(imgItems);
+
+        resetImgItem();
+
+        if (index === 0) {
+            index = items.length - 1;
+        }
+        else {
+            index--;
+        }
+
+        items[index].classList.remove("imgDelete");
+    }
+
+
+    const onMoveNext = () => {
+        let imgItems = document.querySelectorAll(".imgItem");
+        let items = Array.from(imgItems);
+
+        resetImgItem();
+
+        if (index === items.length - 1) {
+            index = 0;
+        }
+        else {
+            index++;
+        }
+
+        items[index].classList.remove("imgDelete");
+    }
+
+    const resetImgItem = () => {
+        let imgItems = document.querySelectorAll(".imgItem");
+        let items = Array.from(imgItems);
+
+        for (let item of items) {
+            item.classList.add("imgDelete");
+        }
+    }
+
+    let interval = setInterval(() => {
+        onMoveNext();
+    }, 4000);
+
+    const imgBoxMouseOver = () => {
+        clearInterval(interval);
+
+        const ctrl_btn = document.querySelectorAll(".bnr_btn");
+        const ctrlBtn = Array.from(ctrl_btn);
+
+        for (let btn of ctrlBtn) {
+            btn.style.opacity = "0.6";
+        }
+    };
+
+    const imgBoxMouseOut = () => {
+        interval = setInterval(() => {
+            onMoveNext()
+        }, 4000);
+
+        const ctrl_btn = document.querySelectorAll(".bnr_btn");
+        const ctrlBtn = Array.from(ctrl_btn);
+
+        for (let btn of ctrlBtn) {
+            btn.style.opacity = "0.2";
+        }
+    };
+
 
     return (
-        <Container>
-            <Carousel
-                fullHeightHover={false}
-                animation="slide"
-                timeout={400}
-                indicators={false}
-            >
-                {rotateImgs.map((item, index) => (
-                    <Item key={index} item={item} />
-                ))}
-            </Carousel>
-        </Container>
+        <HomeRotateBannerBox>
+            <div className="imgBox" onMouseOver={imgBoxMouseOver} onMouseOut={imgBoxMouseOut}>
+                {
+                    rotateImgs.map((item, index) => (
+                        <div key={index} className={index === 0 ? "imgItem" : "imgItem imgDelete"}>
+                            <img alt="" src={item.imgURL} />
+                        </div>
+                    ))
+                }
+                <div className="bnr_ctrl">
+                    <div className="bnr_btn prev" onClick={onMovePrev}>	&#60;</div>
+                    <div className="bnr_btn next" onClick={onMoveNext}>	&#62;</div>
+                </div>
+            </div>
+        </HomeRotateBannerBox >
     );
 };
 
 export default HomeRotateBannerSection;
+

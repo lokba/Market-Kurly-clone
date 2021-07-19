@@ -2,7 +2,7 @@ import HomeFourItems from '../../common/HomeFourItems/index';
 import React, { useState } from 'react';
 import { HomeMdBox } from './styles';
 
-const HomeMdSection = ({ items, lists, info }) => {
+const HomeMdSection = ({ items, lists, info, count }) => {
     const [click, setClick] = useState(0);
 
     const { title } = info;
@@ -25,7 +25,7 @@ const HomeMdSection = ({ items, lists, info }) => {
                     }
                 </ul>
             </div>
-            <HomeFourItems title="" items={items} />
+            <HomeFourItems title="" items={items} count={count} />
             <div className="btn">
                 <button>{lists[click]} 전체보기 &gt;</button>
             </div>

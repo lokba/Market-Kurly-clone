@@ -1,71 +1,80 @@
-import React from 'react';
+import React, { useState } from 'react';
 import Sticker from '../Sticker/index';
 import { HomeFourItemsBox } from './styles';
 
-
-// subTitle에 대한 css 수정 필요
-const HomeFourItems = ({ items, info }) => {
+const HomeFourItems = ({ items, info, count }) => {
     const { title, subTitle } = { ...info };
+
+    const slideWidth = 267;
+    const [index, setIndex] = useState(0);
+
+    const onClickPrev = () => {
+        const item_box = document.querySelectorAll(".itemBox");
+        const itemBox = Array.from(item_box);
+
+        if (index > 0 && index <= 4) {
+            itemBox[count].style.transform = "translate3d(0px, 0px, 0px)";
+            setIndex(0);
+        }
+        else if (index > 4) {
+            itemBox[count].style.transform = "translate3d(-" + (slideWidth * (index - 4)) + "px, 0px, 0px)";
+            setIndex(index - 4);
+        }
+    };
+
+    const onClickNext = () => {
+        const item_box = document.querySelectorAll(".itemBox");
+        const itemBox = Array.from(item_box);
+
+        if (items.length - index > 0 && items.length - index <= 8) {
+            itemBox[count].style.transform = "translate3d(-" + (slideWidth * (items.length - 4)) + "px, 0px, 0px)";
+            setIndex(items.length - 4);
+        }
+        else if (items.length - index > 0 && items.length - index > 8) {
+            itemBox[count].style.transform = "translate3d(-" + (slideWidth * (4 + index)) + "px, 0px, 0px)";
+            setIndex(index + 4);
+        }
+    };
 
     return (
         <HomeFourItemsBox>
             {
-                title &&
-                (
-                    <div className="title">
-                        {title}
-                    </div>
-                )
+                title && <div className="title"> {title}</div>
             }
             {
-                subTitle &&
-                (
-                    <div className="sub">{subTitle}</div>
-                )
+                subTitle && <div className="sub">{subTitle}</div>
             }
+
             <div className="items_list">
-                <div className="item">
-                    <img alt="" src={items[0].imgURL} />
-                    {items[0].sticker && <Sticker />}
-                    <div className="item_title">{items[0].item_title}</div>
-                    <div className="discount">
-                        {items[0].rate && <span className="rate">{items[0].rate}</span>}
-                        <span className="after_price">{items[0].after_price}</span>
-                    </div>
-                    <div className="before_price">{items[0].before_price}</div>
+                <div className="itemBox">
+                    {
+                        items.map(item => (
+                            <div className="item">
+                                <img alt="" src={item.imgURL} />
+                                {item.sticker && <Sticker />}
+                                <div className="item_title">{item.item_title}</div>
+                                <div className="discount">
+                                    {item.rate && <span className="rate">{item.rate}</span>}
+                                    <span className="after_price">{item.after_price}</span>
+                                </div>
+                                <div className="before_price">{item.before_price}</div>
+                            </div>
+                        ))
+                    }
                 </div>
-                <div className="item">
-                    <img alt="" src={items[1].imgURL} />
-                    {items[1].sticker && <Sticker />}
-                    <div className="item_title">{items[1].item_title}</div>
-                    <div className="discount">
-                        {items[1].rate && <span className="rate">{items[1].rate}</span>}
-                        <span className="after_price">{items[1].after_price}</span>
-                    </div>
-                    <div className="before_price">{items[1].before_price}</div>
+                <div className="item_ctrl_btn">
+                    {
+                        (index > 0) && <div className="item_btn prev" onClick={onClickPrev}>&#60;</div>
+                    }
+                    {
+                        (index + 4 !== items.length) && <div className="item_btn next" onClick={onClickNext}>&#62;</div>
+                    }
+
                 </div>
-                <div className="item">
-                    <img alt="" src={items[2].imgURL} />
-                    {items[2].sticker && <Sticker />}
-                    <div className="item_title">{items[2].item_title}</div>
-                    <div className="discount">
-                        {items[2].rate && <span className="rate">{items[2].rate}</span>}
-                        <span className="after_price">{items[2].after_price}</span>
-                    </div>
-                    <div className="before_price">{items[2].before_price}</div>
-                </div>
-                <div className="item">
-                    <img alt="" src={items[3].imgURL} />
-                    {items[3].sticker && <Sticker />}
-                    <div className="item_title">{items[3].item_title}</div>
-                    <div className="discount">
-                        {items[3].rate && <span className="rate">{items[3].rate}</span>}
-                        <span className="after_price">{items[3].after_price}</span>
-                    </div>
-                    <div className="before_price">{items[3].before_price}</div>
-                </div>
+
             </div>
-        </HomeFourItemsBox>
+
+        </HomeFourItemsBox >
     );
 };
 
