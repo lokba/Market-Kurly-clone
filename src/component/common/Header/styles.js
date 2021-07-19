@@ -289,7 +289,6 @@ export const NavBox = styled.div`
         right: 55px;
         top:55px;
         width:330px;
-        display:none;
         padding: 20px 18px 19px 20px;
         border: 1px solid #ddd;
         background-color: #fff;
