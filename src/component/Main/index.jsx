@@ -31,7 +31,7 @@ const Main =
     }) => {
         return (
             <MainBox>
-                <HeaderContainer />
+                <HeaderContainer home />
                 <HomeRotateBannerSection rotateImgs={rotateImgs} />
                 <SideMenu />
                 <HomeFourItems info={items1[0]} items={items1[1]} count={0} />
