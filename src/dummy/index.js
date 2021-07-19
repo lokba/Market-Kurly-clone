@@ -496,7 +496,15 @@ export const mainItems9 = [
         {
             item_title: "문어 뽈뽀",
             imgURL: "/images/goods/kurly_recipe/octopus.jpeg",
-        }
+        },
+        {
+            item_title: "단호박 곤약 콩국수",
+            imgURL: "/images/goods/kurly_recipe/danhobak.jpeg",
+        },
+        {
+            item_title: "그릭 복숭아",
+            imgURL: "/images/goods/kurly_recipe/fruit.jpeg",
+        },
     ]
 ];
 
@@ -523,6 +531,12 @@ export const mainItems10 = [
         },
         {
             imgURL: "/images/goods/instagram_review/img6.jpeg"
+        },
+        {
+            imgURL: "/images/goods/instagram_review/img3.jpeg"
+        },
+        {
+            imgURL: "/images/goods/instagram_review/img4.jpeg"
         },
     ]
 ];

@@ -73,7 +73,6 @@ export const HomeFourItemsBox = styled.div`
         width:249px;
         position:relative;
         cursor: pointer;
-        /* overflow:hidden; */
     }
 
     .item img:hover{

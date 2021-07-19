@@ -6,7 +6,6 @@ const HomeFourItems = ({ items, info, count }) => {
     const { title, subTitle } = { ...info };
 
     const slideWidth = 267;
-
     const [index, setIndex] = useState(0);
 
     const onClickPrev = () => {
@@ -40,18 +39,10 @@ const HomeFourItems = ({ items, info, count }) => {
     return (
         <HomeFourItemsBox>
             {
-                title &&
-                (
-                    <div className="title">
-                        {title}
-                    </div>
-                )
+                title && <div className="title"> {title}</div>
             }
             {
-                subTitle &&
-                (
-                    <div className="sub">{subTitle}</div>
-                )
+                subTitle && <div className="sub">{subTitle}</div>
             }
 
             <div className="items_list">
