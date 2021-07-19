@@ -10,10 +10,16 @@ const HeaderContainer = ({ match, history }) => {
         onAll: false,
     });
 
-    setTimeout(() => {
-        const location_subinfo = document.querySelector(".location_subinfo");
-        location_subinfo.style.display = "none";
-    }, 3000)
+    window.onload = () => {
+        if (match.url === '/') {
+            const location_subinfo = document.querySelector(".location_subinfo");
+            location_subinfo.style.display = "block";
+
+            setTimeout(() => {
+                location_subinfo.style.display = "none";
+            }, 3000)
+        }
+    }
 
     const onLocateOver = () => {
         setOnIcon({
