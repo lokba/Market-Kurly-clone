@@ -74,7 +74,6 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
         }
     };
 
-
     return (
         <HomeRotateBannerBox>
             <div className="imgBox" onMouseOver={imgBoxMouseOver} onMouseOut={imgBoxMouseOut}>
