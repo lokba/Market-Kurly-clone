@@ -85,7 +85,7 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
                         </div>
                     ))
                 }
-                <div className="bnr_ctrl_btn">
+                <div className="bnr_ctrl">
                     <div className="bnr_btn prev" onClick={onMovePrev}>	&#60;</div>
                     <div className="bnr_btn next" onClick={onMoveNext}>	&#62;</div>
                 </div>
@@ -95,3 +95,4 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
 };
 
 export default HomeRotateBannerSection;
+

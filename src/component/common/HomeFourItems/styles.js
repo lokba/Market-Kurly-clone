@@ -42,7 +42,7 @@ export const HomeFourItemsBox = styled.div`
 
             .prev{
                 position:absolute;
-                top:26%;
+                top:27%;
                 left:0;
                 margin-left:5px;
                 padding-top:6px;
@@ -51,7 +51,7 @@ export const HomeFourItemsBox = styled.div`
 
             .next{
                 position:absolute;
-                top:26%;
+                top:27%;
                 right:0.5%;
                 padding-top:6px;
                 padding-left:4px;

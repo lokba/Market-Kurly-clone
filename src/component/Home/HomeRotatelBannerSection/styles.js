@@ -5,7 +5,7 @@ export const HomeRotateBannerBox = styled.div`
 	overflow :hidden;
 	padding:0 10px;
 	cursor:pointer;
-	
+
 	.imgBox{
 		width:100%;
 		display:flex;
@@ -32,7 +32,7 @@ export const HomeRotateBannerBox = styled.div`
 		}
 	}
 
-	.bnr_ctrl_btn{
+	.bnr_ctrl{
 		display:flex;
 		position:absolute;
 		top:43%;

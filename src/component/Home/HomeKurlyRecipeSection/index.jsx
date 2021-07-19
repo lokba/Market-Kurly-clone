@@ -7,10 +7,6 @@ const HomeKurlyRecipeSection = ({ info, items }) => {
     const slideWidth = 356;
     const [index, setIndex] = useState(0);
 
-    let count = 0;
-
-
-
     const onClickPrev = () => {
         const item_box = document.querySelector(".kurlyItemBox");
 
@@ -37,7 +33,6 @@ const HomeKurlyRecipeSection = ({ info, items }) => {
             setIndex(index + 3);
         }
     };
-
 
     return (
         <>
