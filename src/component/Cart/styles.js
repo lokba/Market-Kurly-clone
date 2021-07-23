@@ -176,3 +176,8 @@ export const CartBox = styled.div`
         margin-left :3px;
     }
 `;
+
+
+export const CartItemBox = styled.div`
+    
+`;

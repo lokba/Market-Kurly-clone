@@ -14,7 +14,7 @@ const cartCatData = handleActions(
         [STORE_CART_DATA]: (state, { payload: cartData }) => ({
             ...state,
             cartData,
-        })
+        }),
     },
     initialState
 );

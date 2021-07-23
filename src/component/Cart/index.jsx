@@ -1,9 +1,10 @@
 import React from 'react';
 import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
-import { CartBox } from './styles';
+import { CartBox, CartItemBox } from './styles';
 
-const Cart = () => {
+const Cart = ({ cartData }) => {
+    console.log("cartData", cartData);
     return (
         <CartBox>
             <HeaderContainer />
@@ -18,7 +19,27 @@ const Cart = () => {
                             <div className="ctrl_txt">선택삭제</div>
                         </div>
                         <div className="show_cart_list applyBorder">
-                            장바구니에 담긴 상품이 없습니다.
+                            {
+                                cartData.length !== 0
+                                    ?
+                                    (
+                                        <>
+                                            {
+                                                cartData.map(item =>
+                                                    <CartItem title={item.title} imgURL={item.imgURL} price={item.price} count={item.count} />
+                                                )
+                                            }
+                                        </>
+
+                                    )
+                                    :
+                                    (
+                                        <>
+                                            <div>장바구니에 담긴 상품이 없습니다.</div>
+                                        </>
+                                    )
+                            }
+
                         </div>
                         <div className="select_ctrl">
                             <img alt="" src="/images/icons/circle_unchecked.svg" />
@@ -77,9 +98,35 @@ const Cart = () => {
                         </ul>
                     </div>
                 </div>
-            </section>
+            </section >
             <Footer />
-        </CartBox>
+        </CartBox >
+    );
+}
+
+const CartItem = ({ title, imgURL, price, count }) => {
+
+    return (
+        <CartItemBox>
+            <div className="select_ctrl">
+                <img alt="" src="/images/icons/circle_unchecked.svg" />
+            </div>
+            <div className="cartItemImg">
+                <img alt="" src={imgURL} />
+            </div>
+            <div>{title}</div>
+            <div className="cartItemNumber">
+                <div className="minusBtn">-</div>
+                <div>{count}</div>
+                <div className="plusBtn">+</div>
+            </div>
+            <div className="cartItemPrice">{price}</div>
+            <div className="cartItemDelete">
+                <img alt="" src='/images/icons/ico.delete.svg' />
+            </div>
+
+
+        </CartItemBox>
     );
 }
 
