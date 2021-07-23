@@ -19,7 +19,7 @@ const GoodListsContent = ({ items }) => {
         setModal(!modal);
     }
 
-    const onClickCart = () => {
+    const onClickCart = (count) => {
         const { item_title: title, after_price: price, imgURL } = modalContent;
         let check = false;
         let index = -1;
@@ -38,7 +38,7 @@ const GoodListsContent = ({ items }) => {
             dispatch(increaseCartNumber(index));
         }
         else {
-            dispatch(storeCartData(cartData.concat({ title, price, imgURL, count: 1 })));
+            dispatch(storeCartData(cartData.concat({ title, price, imgURL, count })));
         }
     }
 
