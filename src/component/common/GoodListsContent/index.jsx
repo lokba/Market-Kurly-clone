@@ -10,7 +10,7 @@ const GoodListsContent = ({ items }) => {
 
     const dispatch = useDispatch();
     const { cartData } = useSelector(({ cartCatData }) => ({
-        cartData: cartData,
+        cartData: cartCatData.cartData,
     }))
 
 
@@ -23,7 +23,33 @@ const GoodListsContent = ({ items }) => {
 
     const onClickCart = () => {
         const { item_title: title, after_price: price, imgURL } = modalContent;
-        dispatch(storeCartData({ title, price, imgURL, count: 1 }));
+        let check = false;
+        let index = -1;
+
+        if (cartData !== []) {
+            cartData.forEach((v, idx) => {
+                if (v.title === title) {
+                    check = true;
+                    index = idx;
+                }
+            });
+        }
+
+
+
+        if (check) {
+            let number = cartData[index].count;
+            let ary = { ...cartData[index], count: number + 1 }
+
+            console.log(ary);
+            cartData[index] = ary;
+            dispatch(storeCartData(cartData))
+        }
+        else {
+            dispatch(storeCartData(cartData.concat({ title, price, imgURL, count: 1 })));
+        }
+
+        // dispatch(storeCartData({ title, price, imgURL, count: 1 }));
     }
 
     return (

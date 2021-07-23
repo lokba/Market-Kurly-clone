@@ -11,11 +11,10 @@ const initialState = {
 
 const cartCatData = handleActions(
     {
-        [STORE_CART_DATA]: (state, { payload: cartData }) =>
-            produce(state, draft => {
-                draft["cartData"] = draft["cartData"].concat([cartData])
-            }),
-
+        [STORE_CART_DATA]: (state, { payload: cartData }) => ({
+            ...state,
+            cartData,
+        })
     },
     initialState
 );
