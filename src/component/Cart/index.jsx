@@ -114,15 +114,19 @@ const CartItem = ({ title, imgURL, price, count }) => {
             <div className="cartItemImg">
                 <img alt="" src={imgURL} />
             </div>
-            <div>{title}</div>
+            <div className="cartItemTit">{title}</div>
             <div className="cartItemNumber">
-                <div className="minusBtn">-</div>
-                <div>{count}</div>
-                <div className="plusBtn">+</div>
+                <div className="minusBtn cartItemBtn">
+                    <img alt="" src="/images/icons/ico_minus.svg" />
+                </div>
+                <div className="btn_value">{count}</div>
+                <div className="plusBtn cartItemBtn ">
+                    <img alt="" src="/images/icons/ico_plus_on.svg" />
+                </div>
             </div>
             <div className="cartItemPrice">{price}</div>
             <div className="cartItemDelete">
-                <img alt="" src='/images/icons/ico.delete.svg' />
+                <img alt="" src='/images/icons/ico_delete.svg' />
             </div>
 
 
