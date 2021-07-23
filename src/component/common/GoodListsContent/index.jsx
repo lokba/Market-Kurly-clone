@@ -1,15 +1,29 @@
 import React, { useState } from 'react';
+import { useSelector } from 'react-redux';
+import { useDispatch } from 'react-redux';
+import { storeCartData } from '../../../modules/cartCatData';
 import Modal from '../Modal/index';
 import Sticker from '../Sticker/index';
 import { GoodListsContentBox } from './styles';
 
 const GoodListsContent = ({ items }) => {
 
+    const dispatch = useDispatch();
+    const { cartData } = useSelector(({ cartCatData }) => ({
+        cartData: cartData,
+    }))
+
+
     const [modal, setModal] = useState(false);
     const [modalContent, setModalContent] = useState(null);
 
     const onCancel = () => {
         setModal(!modal);
+    }
+
+    const onClickCart = () => {
+        const { item_title: title, after_price: price, imgURL } = modalContent;
+        dispatch(storeCartData({ title, price, imgURL, count: 1 }));
     }
 
     return (
@@ -26,7 +40,8 @@ const GoodListsContent = ({ items }) => {
                                 setModalContent({
                                     item_title: `${item.item_title}`,
                                     after_price: `${item.after_price}`,
-                                    before_price: `${item.before_prices}`,
+                                    before_price: `${item.before_price}`,
+                                    imgURL: `${item.imgURL}`
                                 });
                             }}>
                                 <div className="cart" />
@@ -52,6 +67,7 @@ const GoodListsContent = ({ items }) => {
                     <Modal
                         onCancel={onCancel}
                         modalContent={modalContent}
+                        onClickCart={onClickCart}
                     />
                 }
 

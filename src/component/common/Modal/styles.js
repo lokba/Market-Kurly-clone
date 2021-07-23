@@ -39,8 +39,17 @@ export const ModalContent = styled.div`
 
             align-items: center;
             .modal_price{
-                padding-right:4px;
-                font-weight:800;
+                display:flex;
+                .modal_after_price{
+                    padding-right:6px;
+                    font-weight:800;
+                }
+
+                .modal_before_price{
+                    color:#999;
+                    text-decoration:line-through;
+                    font-weight:400;
+                }
             }
 
             .ctrl_store{

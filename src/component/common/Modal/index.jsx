@@ -1,13 +1,26 @@
-import React from 'react';
+import React, { useState } from 'react';
 import { ModalContainer, ModalContent } from './styles';
 
 const Modal =
     ({
         onCancel,
-        modalContent
+        modalContent,
+        onClickCart,
     }) => {
         const { item_title, after_price, before_price } = modalContent;
         const pointNum = Math.floor(Number(after_price.split("").filter(v => v !== "원").filter(v => v !== ",").join("")) * 0.05);
+
+        const [count, setCount] = useState(1);
+
+        const onIncrease = () => {
+            setCount(count + 1);
+        }
+        const onDecrease = () => {
+            if (count > 1) {
+                setCount(count - 1);
+            }
+        }
+
         return (
             <ModalContainer>
                 <ModalContent>
@@ -16,11 +29,15 @@ const Modal =
                             {item_title}
                         </div>
                         <div className="modal_sub">
-                            <div className="modal_price">{after_price}</div>
+                            <div className="modal_price">
+                                <div className="modal_after_price">{after_price}</div>
+                                <div className="modal_before_price">{before_price}</div>
+                            </div>
+
                             <div className="ctrl_store">
-                                <div className="store_btn">-</div>
-                                <div className="store_num">1</div>
-                                <div className="store_btn">+</div>
+                                <div className="store_btn" onClick={onDecrease}>-</div>
+                                <div className="store_num">{count}</div>
+                                <div className="store_btn" onClick={onIncrease}>+</div>
                             </div>
                         </div>
                     </div>
@@ -38,7 +55,7 @@ const Modal =
                     </div>
                     <div className="modal_btnBox">
                         <div className="modalBtn cancelBtn" onClick={onCancel}>취소</div>
-                        <div className="modalBtn cartBtn">장바구니 담기</div>
+                        <div className="modalBtn cartBtn" onClick={onClickCart}>장바구니 담기</div>
                     </div>
                 </ModalContent>
             </ModalContainer>
