@@ -55,7 +55,7 @@ const Modal =
                     </div>
                     <div className="modal_btnBox">
                         <div className="modalBtn cancelBtn" onClick={onCancel}>취소</div>
-                        <div className="modalBtn cartBtn" onClick={onClickCart}>장바구니 담기</div>
+                        <div className="modalBtn cartBtn" onClick={() => { onClickCart(); onCancel(); }}>장바구니 담기</div>
                     </div>
                 </ModalContent>
             </ModalContainer>

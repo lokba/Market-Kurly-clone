@@ -7,12 +7,10 @@ import Sticker from '../Sticker/index';
 import { GoodListsContentBox } from './styles';
 
 const GoodListsContent = ({ items }) => {
-
     const dispatch = useDispatch();
     const { cartData } = useSelector(({ cartCatData }) => ({
         cartData: cartCatData.cartData,
     }))
-
 
     const [modal, setModal] = useState(false);
     const [modalContent, setModalContent] = useState(null);
@@ -31,25 +29,20 @@ const GoodListsContent = ({ items }) => {
                 if (v.title === title) {
                     check = true;
                     index = idx;
+                    return;
                 }
             });
         }
 
-
-
         if (check) {
             let number = cartData[index].count;
-            let ary = { ...cartData[index], count: number + 1 }
+            cartData[index] = { ...cartData[index], count: number + 1 }
 
-            console.log(ary);
-            cartData[index] = ary;
             dispatch(storeCartData(cartData))
         }
         else {
             dispatch(storeCartData(cartData.concat({ title, price, imgURL, count: 1 })));
         }
-
-        // dispatch(storeCartData({ title, price, imgURL, count: 1 }));
     }
 
     return (

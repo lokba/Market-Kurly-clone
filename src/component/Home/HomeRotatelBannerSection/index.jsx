@@ -1,7 +1,8 @@
 import React from 'react';
+import { withRouter } from 'react-router';
 import { HomeRotateBannerBox } from './styles';
 
-const HomeRotateBannerSection = ({ rotateImgs }) => {
+const HomeRotateBannerSection = ({ match, rotateImgs }) => {
     let index = 0;
 
     const onMovePrev = () => {
@@ -16,7 +17,6 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
         else {
             index--;
         }
-
         items[index].classList.remove("imgDelete");
     }
 
@@ -33,7 +33,6 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
         else {
             index++;
         }
-
         items[index].classList.remove("imgDelete");
     }
 
@@ -46,12 +45,15 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
         }
     }
 
-    let interval = setInterval(() => {
-        onMoveNext();
-    }, 4000);
+
+
+    // 수정 보완 필요
+    // let interval = setInterval(() => {
+    //     onMoveNext();
+    // }, 4000);
 
     const imgBoxMouseOver = () => {
-        clearInterval(interval);
+        // clearInterval(interval);
 
         const ctrl_btn = document.querySelectorAll(".bnr_btn");
         const ctrlBtn = Array.from(ctrl_btn);
@@ -62,9 +64,9 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
     };
 
     const imgBoxMouseOut = () => {
-        interval = setInterval(() => {
-            onMoveNext()
-        }, 4000);
+        // interval = setInterval(() => {
+        //     onMoveNext()
+        // }, 4000);
 
         const ctrl_btn = document.querySelectorAll(".bnr_btn");
         const ctrlBtn = Array.from(ctrl_btn);
@@ -93,5 +95,5 @@ const HomeRotateBannerSection = ({ rotateImgs }) => {
     );
 };
 
-export default HomeRotateBannerSection;
+export default withRouter(HomeRotateBannerSection);
 
