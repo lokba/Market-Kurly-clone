@@ -14,11 +14,13 @@ const CartContainer = () => {
 
     const onIncreaseBtn = (index) => {
         dispatch(increaseCartNumber(index));
+
     }
 
     const onDecreaseBtn = (index) => {
         if (cartData && cartData[index]["count"] > 1) {
             dispatch(decreaseCartNumber(index));
+
         }
     }
 

@@ -11,18 +11,15 @@ const Modal =
 
         const [count, setCount] = useState(1);
 
-        const pointNum = Math.floor(Number(after_price.split("").filter(v => v !== "원").filter(v => v !== ",").join("")) * 0.05 * count);
-        const resultPrice = Math.floor(Number(after_price.split("").filter(v => v !== "원").filter(v => v !== ",").join("")) * count);
-
         let insertDot = (price) => {
-
             if (price.length <= 3) {
                 return price;
             }
-
-            return insertDot(price.slice(0, price.length - 3)) + ',' + price.slice(price.length - 3)
+            return insertDot(price.slice(0, price.length - 3)) + ',' + price.slice(price.length - 3);
         };
 
+        const pointNum = insertDot(String(Math.floor(Number(after_price.split("").filter(v => v !== "원").filter(v => v !== ",").join("")) * 0.05 * count)));
+        const resultPrice = insertDot(String(Math.floor(Number(after_price.split("").filter(v => v !== "원").filter(v => v !== ",").join("")) * count)));
 
         const onIncrease = () => {
             setCount(count + 1);
@@ -58,12 +55,12 @@ const Modal =
                         <div className="total_info">
                             <div className="total_tit">합계</div>
                             <div className="total_sub">
-                                <div className="total_price"><strong>{insertDot(String(resultPrice))}</strong>원</div>
+                                <div className="total_price"><strong>{resultPrice}</strong>원</div>
                             </div>
                         </div>
                         <div className="total_point">
                             <div className="point_btn">적립</div>
-                            <div className="point_txt">구매 시 {insertDot(String(pointNum))}원 적립</div>
+                            <div className="point_txt">구매 시 {pointNum}원 적립</div>
                         </div>
                     </div>
                     <div className="modal_btnBox">

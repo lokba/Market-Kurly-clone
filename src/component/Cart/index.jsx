@@ -9,7 +9,6 @@ const Cart = ({
     onDecreaseBtn,
     onDeleteBtn,
 }) => {
-    console.log("cartData", cartData);
     return (
         <CartBox>
             <HeaderContainer />
@@ -130,6 +129,16 @@ const CartItem = ({
     onDeleteBtn,
 }) => {
 
+    let insertDot = (str) => {
+        if (str.length <= 3) {
+            return str;
+        }
+        return insertDot(str.slice(0, str.length - 3)) + ',' + str.slice(str.length - 3);
+    }
+
+
+    let resultPrice = insertDot(String(Number(price.split("").filter(v => v !== "원" && v !== ",").join("")) * count)) + "원";
+
     return (
         <CartItemBox>
             <div className="select_ctrl">
@@ -148,7 +157,7 @@ const CartItem = ({
                     <img alt="" src="/images/icons/ico_plus_on.svg" />
                 </div>
             </div>
-            <div className="cartItemPrice">{price}</div>
+            <div className="cartItemPrice">{resultPrice}</div>
             <div className="cartItemDelete" onClick={() => onDeleteBtn(index)}>
                 <img alt="" src='/images/icons/ico_delete.svg' />
             </div>
