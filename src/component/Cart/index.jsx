@@ -3,7 +3,11 @@ import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
 import { CartBox, CartItemBox } from './styles';
 
-const Cart = ({ cartData }) => {
+const Cart = ({
+    cartData,
+    onIncreaseBtn,
+    onDecreaseBtn,
+}) => {
     console.log("cartData", cartData);
     return (
         <CartBox>
@@ -25,8 +29,17 @@ const Cart = ({ cartData }) => {
                                     (
                                         <>
                                             {
-                                                cartData.map(item =>
-                                                    <CartItem title={item.title} imgURL={item.imgURL} price={item.price} count={item.count} />
+                                                cartData.map((item, idx) =>
+                                                    <CartItem
+                                                        key={idx}
+                                                        index={idx}
+                                                        title={item.title}
+                                                        imgURL={item.imgURL}
+                                                        price={item.price}
+                                                        count={item.count}
+                                                        onIncreaseBtn={onIncreaseBtn}
+                                                        onDecreaseBtn={onDecreaseBtn}
+                                                    />
                                                 )
                                             }
                                         </>
@@ -34,9 +47,9 @@ const Cart = ({ cartData }) => {
                                     )
                                     :
                                     (
-                                        <>
+                                        <div className="noCartItem">
                                             <div>장바구니에 담긴 상품이 없습니다.</div>
-                                        </>
+                                        </div>
                                     )
                             }
 
@@ -104,7 +117,15 @@ const Cart = ({ cartData }) => {
     );
 }
 
-const CartItem = ({ title, imgURL, price, count }) => {
+const CartItem = ({
+    title,
+    imgURL,
+    price,
+    count,
+    index,
+    onIncreaseBtn,
+    onDecreaseBtn,
+}) => {
 
     return (
         <CartItemBox>
@@ -116,11 +137,11 @@ const CartItem = ({ title, imgURL, price, count }) => {
             </div>
             <div className="cartItemTit">{title}</div>
             <div className="cartItemNumber">
-                <div className="minusBtn cartItemBtn">
+                <div className="minusBtn cartItemBtn" onClick={() => onDecreaseBtn(index)}>
                     <img alt="" src="/images/icons/ico_minus.svg" />
                 </div>
                 <div className="btn_value">{count}</div>
-                <div className="plusBtn cartItemBtn ">
+                <div className="plusBtn cartItemBtn" onClick={() => onIncreaseBtn(index)}>
                     <img alt="" src="/images/icons/ico_plus_on.svg" />
                 </div>
             </div>

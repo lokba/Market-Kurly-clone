@@ -1,7 +1,7 @@
 import React, { useState } from 'react';
 import { useSelector } from 'react-redux';
 import { useDispatch } from 'react-redux';
-import { storeCartData } from '../../../modules/cartCatData';
+import { increaseCartNumber, storeCartData } from '../../../modules/cartCatData';
 import Modal from '../Modal/index';
 import Sticker from '../Sticker/index';
 import { GoodListsContentBox } from './styles';
@@ -35,10 +35,7 @@ const GoodListsContent = ({ items }) => {
         }
 
         if (check) {
-            let number = cartData[index].count;
-            cartData[index] = { ...cartData[index], count: number + 1 }
-
-            dispatch(storeCartData(cartData))
+            dispatch(increaseCartNumber(index));
         }
         else {
             dispatch(storeCartData(cartData.concat({ title, price, imgURL, count: 1 })));

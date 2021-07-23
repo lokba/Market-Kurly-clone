@@ -51,8 +51,14 @@ export const CartBox = styled.div`
         min-height:255px;
         display:flex;
         flex-direction:column;
-        /* justify-content: center; */
-        /* align-items: center; */
+
+        .noCartItem{
+            height:255px;
+            width:100%;
+            display:flex;
+            justify-content: center;
+            align-items: center;
+        }
     }
 
     .applyBorder{
