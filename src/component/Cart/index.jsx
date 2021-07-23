@@ -7,6 +7,7 @@ const Cart = ({
     cartData,
     onIncreaseBtn,
     onDecreaseBtn,
+    onDeleteBtn,
 }) => {
     console.log("cartData", cartData);
     return (
@@ -39,6 +40,7 @@ const Cart = ({
                                                         count={item.count}
                                                         onIncreaseBtn={onIncreaseBtn}
                                                         onDecreaseBtn={onDecreaseBtn}
+                                                        onDeleteBtn={onDeleteBtn}
                                                     />
                                                 )
                                             }
@@ -125,6 +127,7 @@ const CartItem = ({
     index,
     onIncreaseBtn,
     onDecreaseBtn,
+    onDeleteBtn,
 }) => {
 
     return (
@@ -146,7 +149,7 @@ const CartItem = ({
                 </div>
             </div>
             <div className="cartItemPrice">{price}</div>
-            <div className="cartItemDelete">
+            <div className="cartItemDelete" onClick={() => onDeleteBtn(index)}>
                 <img alt="" src='/images/icons/ico_delete.svg' />
             </div>
 
