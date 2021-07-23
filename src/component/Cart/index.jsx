@@ -1,9 +1,14 @@
 import React from 'react';
 import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
-import { CartBox } from './styles';
+import { CartBox, CartItemBox } from './styles';
 
-const Cart = () => {
+const Cart = ({
+    cartData,
+    onIncreaseBtn,
+    onDecreaseBtn,
+    onDeleteBtn,
+}) => {
     return (
         <CartBox>
             <HeaderContainer />
@@ -18,7 +23,37 @@ const Cart = () => {
                             <div className="ctrl_txt">선택삭제</div>
                         </div>
                         <div className="show_cart_list applyBorder">
-                            장바구니에 담긴 상품이 없습니다.
+                            {
+                                cartData.length !== 0
+                                    ?
+                                    (
+                                        <>
+                                            {
+                                                cartData.map((item, idx) =>
+                                                    <CartItem
+                                                        key={idx}
+                                                        index={idx}
+                                                        title={item.title}
+                                                        imgURL={item.imgURL}
+                                                        price={item.price}
+                                                        count={item.count}
+                                                        onIncreaseBtn={onIncreaseBtn}
+                                                        onDecreaseBtn={onDecreaseBtn}
+                                                        onDeleteBtn={onDeleteBtn}
+                                                    />
+                                                )
+                                            }
+                                        </>
+
+                                    )
+                                    :
+                                    (
+                                        <div className="noCartItem">
+                                            <div>장바구니에 담긴 상품이 없습니다.</div>
+                                        </div>
+                                    )
+                            }
+
                         </div>
                         <div className="select_ctrl">
                             <img alt="" src="/images/icons/circle_unchecked.svg" />
@@ -77,9 +112,58 @@ const Cart = () => {
                         </ul>
                     </div>
                 </div>
-            </section>
+            </section >
             <Footer />
-        </CartBox>
+        </CartBox >
+    );
+}
+
+const CartItem = ({
+    title,
+    imgURL,
+    price,
+    count,
+    index,
+    onIncreaseBtn,
+    onDecreaseBtn,
+    onDeleteBtn,
+}) => {
+
+    let insertDot = (str) => {
+        if (str.length <= 3) {
+            return str;
+        }
+        return insertDot(str.slice(0, str.length - 3)) + ',' + str.slice(str.length - 3);
+    }
+
+
+    let resultPrice = insertDot(String(Number(price.split("").filter(v => v !== "원" && v !== ",").join("")) * count)) + "원";
+
+    return (
+        <CartItemBox>
+            <div className="select_ctrl">
+                <img alt="" src="/images/icons/circle_unchecked.svg" />
+            </div>
+            <div className="cartItemImg">
+                <img alt="" src={imgURL} />
+            </div>
+            <div className="cartItemTit">{title}</div>
+            <div className="cartItemNumber">
+                <div className="minusBtn cartItemBtn" onClick={() => onDecreaseBtn(index)}>
+                    <img alt="" src="/images/icons/ico_minus.svg" />
+                </div>
+                <div className="btn_value">{count}</div>
+                <div className="plusBtn cartItemBtn" onClick={() => onIncreaseBtn(index)}>
+                    <img alt="" src="/images/icons/ico_plus_on.svg" />
+                </div>
+            </div>
+            <div className="cartItemPrice">{resultPrice}</div>
+            <div className="cartItemDelete" onClick={() => onDeleteBtn(index)}>
+                <img alt="" src='/images/icons/ico_delete.svg' />
+            </div>
+
+
+        </CartItemBox>
     );
 }
 

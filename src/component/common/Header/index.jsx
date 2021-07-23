@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from 'react';
+import { Link } from 'react-router-dom';
 import { HeaderBox, NavBox } from './styles';
 
 const Header = ({
@@ -62,19 +63,19 @@ const Header = ({
         <>
             <HeaderBox>
                 <div id="userMenu">
-                    <a href="/">
+                    <Link to="/">
                         <img alt="" src="/images/icons/delivery.png" />
-                    </a>
+                    </Link>
                     <div id="menu_lists">
                         <div id="register">
-                            <a href="/shop/member/join">
+                            <Link to="/shop/member/join">
                                 <li className="register_link">회원가입</li>
-                            </a>
+                            </Link>
                         </div>
                         <div id="login">
-                            <a href="/shop/member/login">
+                            <Link to="/shop/member/login">
                                 <li>로그인</li>
-                            </a>
+                            </Link>
                         </div>
                         <div id="info" onMouseOver={onMenuInfoOver} onMouseOut={onMenuInfoOut}>
                             <li>고객센터</li>
@@ -90,9 +91,9 @@ const Header = ({
                     </div>
                 </div>
                 <div className="logoArea">
-                    <a href="/" id="logo">
+                    <Link to="/" id="logo">
                         <img alt="" src="/images/icons/logo_x2.png" />
-                    </a>
+                    </Link>
                 </div>
             </HeaderBox>
             <NavBox>
@@ -132,18 +133,18 @@ const Header = ({
                         </ul>
                     </div>
                 </div>
-                <a href="/shop/goods/goods_list/new">
+                <Link to="/shop/goods/goods_list/new">
                     <li id="new" className="menu">신상품</li>
-                </a>
-                <a href="/shop/goods/goods_list/best">
+                </Link>
+                <Link to="/shop/goods/goods_list/best">
                     <li id="best" className="menu">베스트</li>
-                </a>
-                <a href="/shop/goods/goods_list/sale">
+                </Link>
+                <Link to="/shop/goods/goods_list/sale">
                     <li id="sale" className="menu">알뜰쇼핑</li>
-                </a>
-                <a href="/shop/goods/event">
+                </Link>
+                <Link to="/shop/goods/event">
                     <li id="event" className="menu">특가/혜택</li>
-                </a>
+                </Link>
                 <div id="search">
                     <input
                         value={inputValue}
@@ -163,9 +164,9 @@ const Header = ({
                         <div><span>배송지를 등록</span>하고</div>
                         <div>구매 가능한 상품을 확인하세요!</div>
                         <div className="location_btn_box">
-                            <a href="/shop/member/login">
+                            <Link to="/shop/member/login">
                                 <div className="location_loginBtn locationBtn">로그인</div>
-                            </a>
+                            </Link>
                             <div className="location_addressBtn locationBtn">
                                 <img alt="" src="/images/icons/ico_search_white.png" />
                                 <div>주소검색</div>
@@ -173,14 +174,14 @@ const Header = ({
                         </div>
                     </div>
                 </div>
-                <a href="/shop/goods/goods_cart" id="cart" onMouseOver={onCartOver} onMouseOut={onCartOut}>
+                <Link to="/shop/goods/goods_cart" id="cart" onMouseOver={onCartOver} onMouseOut={onCartOut}>
                     {
                         onCart ?
                             (<img alt="" id="location_img" src="/images/icons/ico_cart_checked.svg" />)
                             :
                             (<img alt="" id="cart_img" src="/images/icons/ico_cart.svg" />)
                     }
-                </a>
+                </Link>
             </NavBox>
         </>
     );

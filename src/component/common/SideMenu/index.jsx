@@ -5,16 +5,17 @@ const SideMenu = (props) => {
     const sideMenu = useRef();
     const offset = props.sub ? 230 : 674;
 
+
     if (!props.find) {
         window.addEventListener('scroll', function (e) {
-            if (window.pageYOffset > `${offset}`) {
-                sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
-            }
-            else {
-                sideMenu.current.style.top = `${offset}px`;
-            }
-        });
-    };
+            // if (window.pageYOffset > `${offset}`) {
+            //     sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
+            // }
+            // else {
+            //     sideMenu.current.style.top = `${offset}px`;
+            // }
+        })
+    }
 
     return (
         <>

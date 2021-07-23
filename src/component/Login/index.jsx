@@ -1,4 +1,5 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import HeaderContainer from '../../container/HeaderContainer';
 import Footer from '../common/Footer/index';
 import { LoginBox } from './styles';
@@ -28,22 +29,23 @@ const Login = ({ onChange, loginInfo }) => {
                                 </div>
                             </div>
                             <div className="login_search">
-                                <a href="/shop/member/login/find_id">
+                                <Link to="/shop/member/login/find_id">
                                     <span>아이디 찾기</span>
-                                </a>
+                                </Link>
                                 <span className="bar" />
-                                <a href="/shop/member/login/find_pwd">
+                                <Link to="/shop/member/login/find_pwd">
                                     <span>비밀번호 찾기</span>
-                                </a>
+                                </Link>
                             </div>
                         </div>
                         <div className=" btnBox">
-                            <a href>
+                            {/* 기능 추가 */}
+                            <Link to="/shop/member/login">
                                 <span className="loginBtn">로그인</span>
-                            </a>
-                            <a href="/shop/member/join">
+                            </Link>
+                            <Link href="/shop/member/join">
                                 <span className="registerBtn">회원가입</span>
-                            </a>
+                            </Link>
                         </div>
                     </form>
                 </div>

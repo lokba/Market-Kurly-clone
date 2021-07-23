@@ -1,6 +1,7 @@
 import React from 'react';
 import { combineReducers } from '../../node_modules/redux';
 import bestCatData from './bestCatData';
+import cartCatData from './cartCatData';
 import eventCatData from './eventCatData';
 import mainCatData from './mainCatData';
 import newCatData from './newCatData';
@@ -13,6 +14,9 @@ const rootReducer = combineReducers({
     newCatData,
     saleCatData,
     mainCatData,
+    cartCatData,
 });
+
+
 
 export default rootReducer;
