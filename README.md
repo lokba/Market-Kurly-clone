@@ -8,3 +8,5 @@
 
 4 주차(7.13 ~ 7.19) : develop market-kurly clone using redux.
 
+5 주차(7.20 ~ 7.26) : complement market-kurly clone using what we've learned so far.
+
