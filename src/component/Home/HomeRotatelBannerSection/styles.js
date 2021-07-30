@@ -30,9 +30,8 @@ export const HomeRotateBannerBox = styled.div`
 				opacity: 1;
 			}
 		}
-	}
 
-	.bnr_ctrl{
+		.bnr_ctrl{
 		display:flex;
 		position:absolute;
 		top:43%;
@@ -54,7 +53,7 @@ export const HomeRotateBannerBox = styled.div`
 		}
 
 		.prev{
-			margin-right:1400px;
+			margin-right:1200px;
 			padding-top:6px;
 			padding-right:4px;
 		}
@@ -63,5 +62,7 @@ export const HomeRotateBannerBox = styled.div`
 			padding-top:6px;
 			padding-left:4px;
 		}
+	}
+	
 	}
 `;

@@ -13,11 +13,9 @@ const SideMenu = (props) => {
             window.addEventListener('scroll', function (e) {
                 if (sideMenu) {
                     if (window.pageYOffset > `${offset}`) {
-                        // sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
                         sideMenu.style.top = `${window.pageYOffset + 250}px`;
                     }
                     else {
-                        // sideMenu.current.style.top = `${offset}px`;
                         sideMenu.style.top = `${offset}px`;
                     }
                 }
