@@ -153,7 +153,7 @@ const CartItem = ({
                     <img alt="" src="/images/icons/ico_minus.svg" />
                 </div>
                 <div className="btn_value">{count}</div>
-                <div className="plusBtn cartItemBtn" onClick={() => onIncreaseBtn(index)}>
+                <div className="plusBtn cartItemBtn" onClick={() => onIncreaseBtn(index, 1)}>
                     <img alt="" src="/images/icons/ico_plus_on.svg" />
                 </div>
             </div>

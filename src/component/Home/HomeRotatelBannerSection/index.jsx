@@ -46,8 +46,7 @@ const HomeRotateBannerSection = ({ match, rotateImgs }) => {
     }
 
 
-
-    // 수정 보완 필요
+    // // 수정 보완 필요
     // let interval = setInterval(() => {
     //     onMoveNext();
     // }, 4000);

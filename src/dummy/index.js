@@ -378,7 +378,7 @@ export const mainItems7 = [
             sticker: false,
         },
         {
-            item_title: "[오뗄블랙라벨] 추억의 비엔나 소x시지 800g",
+            item_title: "[오뗄블랙라벨] 추억의 비엔나 소시지 800g",
             rate: "15%",
             after_price: "5,865원",
             before_price: "6,900원",
@@ -460,7 +460,7 @@ export const mainItems8 = [
             sticker: false,
         },
         {
-            item_title: "[오뗄블랙라벨] 추억의 비엔나 소x시지 800g",
+            item_title: "[오뗄블랙라벨] 추억의 비엔나 소시지 800g",
             rate: "15%",
             after_price: "5,865원",
             before_price: "6,900원",

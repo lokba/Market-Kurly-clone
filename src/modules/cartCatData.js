@@ -24,9 +24,9 @@ const cartCatData = handleActions(
             ...state,
             cartData,
         }),
-        [INCREASE_CART_NUMBER]: (state, { payload: index }) =>
+        [INCREASE_CART_NUMBER]: (state, { payload: { index, count } }) =>
             produce(state, draft => {
-                draft["cartData"][Number(index)]["count"] += 1;
+                draft["cartData"][Number(index)]["count"] += count;
             }),
         [DECREASE_CART_NUMBER]: (state, { payload: index }) =>
             produce(state, draft => {
