@@ -63,6 +63,6 @@ export const HomeRotateBannerBox = styled.div`
 			padding-left:4px;
 		}
 	}
-	
+
 	}
 `;

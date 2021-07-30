@@ -60,7 +60,7 @@ const GoodListsContent = ({ items }) => {
                                     imgURL: `${item.imgURL}`
                                 });
                             }}>
-                                <div className="cart" />
+                                {/* <div className="cart" /> */}
                             </div>
                             <div className="item_title">{item.item_title}</div>
                             <div className="discount">

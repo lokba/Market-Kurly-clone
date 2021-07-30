@@ -21,7 +21,6 @@ export const GoodListsContentBox = styled.div`
     .good{
         width:308px;
         height:396px;
-        position:relative;
         cursor: pointer;
     }
 
@@ -34,13 +33,9 @@ export const GoodListsContentBox = styled.div`
         z-index: 100;
         top:335px;
         right: 15px;
-        width: 45px;
-        height:45px;
-    }
 
-    .cart{
-        width:45px;
-        height:45px;
+        width: 45px;
+        height:45px; 
         background-image: url("/images/icons/add_cart.svg");
         cursor:pointer;
     }
