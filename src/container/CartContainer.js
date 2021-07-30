@@ -12,8 +12,8 @@ const CartContainer = () => {
 
 
 
-    const onIncreaseBtn = (index) => {
-        dispatch(increaseCartNumber(index));
+    const onIncreaseBtn = (index, count) => {
+        dispatch(increaseCartNumber({ index, count }));
 
     }
 

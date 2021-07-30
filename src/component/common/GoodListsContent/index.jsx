@@ -35,7 +35,7 @@ const GoodListsContent = ({ items }) => {
         }
 
         if (check) {
-            dispatch(increaseCartNumber(index));
+            dispatch(increaseCartNumber({ index, count }));
         }
         else {
             dispatch(storeCartData(cartData.concat({ title, price, imgURL, count })));
