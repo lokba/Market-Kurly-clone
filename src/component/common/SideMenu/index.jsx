@@ -1,25 +1,33 @@
 import React, { useRef } from 'react';
+import { useEffect } from 'react';
 import { SideMenuBox } from './styles';
 
 const SideMenu = (props) => {
-    const sideMenu = useRef();
+
     const offset = props.sub ? 230 : 674;
 
+    useEffect(() => {
+        let sideMenu = document.querySelector(".sideMenuBox");
 
-    if (!props.find) {
-        window.addEventListener('scroll', function (e) {
-            // if (window.pageYOffset > `${offset}`) {
-            //     sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
-            // }
-            // else {
-            //     sideMenu.current.style.top = `${offset}px`;
-            // }
-        })
-    }
+        if (!props.find) {
+            window.addEventListener('scroll', function (e) {
+                if (sideMenu) {
+                    if (window.pageYOffset > `${offset}`) {
+                        // sideMenu.current.style.top = `${window.pageYOffset + 250}px`;
+                        sideMenu.style.top = `${window.pageYOffset + 250}px`;
+                    }
+                    else {
+                        // sideMenu.current.style.top = `${offset}px`;
+                        sideMenu.style.top = `${offset}px`;
+                    }
+                }
+            })
+        }
+    }, [offset, props.find]);
 
     return (
         <>
-            <SideMenuBox ref={sideMenu} {...props}>
+            <SideMenuBox className="sideMenuBox" {...props}>
                 <div className="side_menu_img">
                     <img alt="" src="/images/icons/side_btn.png" />
                 </div>
@@ -38,7 +46,7 @@ const SideMenu = (props) => {
                         <img alt="" src="/images/icons/ico_side_down.png" />
                     </div>
                 </div>
-            </SideMenuBox>
+            </SideMenuBox >
         </>
     );
 };

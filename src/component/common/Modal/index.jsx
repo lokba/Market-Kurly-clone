@@ -15,6 +15,7 @@ const Modal =
             if (price.length <= 3) {
                 return price;
             }
+
             return insertDot(price.slice(0, price.length - 3)) + ',' + price.slice(price.length - 3);
         };
 
@@ -65,7 +66,7 @@ const Modal =
                     </div>
                     <div className="modal_btnBox">
                         <div className="modalBtn cancelBtn" onClick={onCancel}>취소</div>
-                        <div className="modalBtn cartBtn" onClick={() => { onClickCart(count); onCancel(); }}>장바구니 담기</div>
+                        <div className="modalBtn cartBtn" onClick={() => { onClickCart(count, resultPrice); onCancel(); }}>장바구니 담기</div>
                     </div>
                 </ModalContent>
             </ModalContainer>
