@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.js": "/Market-Kurly-clone/static/js/main.38d6593e.chunk.js",
-    "main.js.map": "/Market-Kurly-clone/static/js/main.38d6593e.chunk.js.map",
+    "main.js": "/Market-Kurly-clone/static/js/main.72acd725.chunk.js",
+    "main.js.map": "/Market-Kurly-clone/static/js/main.72acd725.chunk.js.map",
     "runtime-main.js": "/Market-Kurly-clone/static/js/runtime-main.3d2679e2.js",
     "runtime-main.js.map": "/Market-Kurly-clone/static/js/runtime-main.3d2679e2.js.map",
     "static/js/2.42a5813c.chunk.js": "/Market-Kurly-clone/static/js/2.42a5813c.chunk.js",
@@ -12,6 +12,6 @@
   "entrypoints": [
     "static/js/runtime-main.3d2679e2.js",
     "static/js/2.42a5813c.chunk.js",
-    "static/js/main.38d6593e.chunk.js"
+    "static/js/main.72acd725.chunk.js"
   ]
 }
